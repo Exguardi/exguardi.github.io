@@ -113,8 +113,8 @@ $(document).ready(function ()
         {
             dataType: "jsonp",
             url: "http://getsimpleform.com/messages/ajax?form_api_token=b052bf68956af7294626512296804d73",
-            data: str,
-            success: function (msg)
+            data: str//,
+            /*success: function (msg)
             {
                 $("#note").ajaxComplete(function (event, request, settings)
                 {
@@ -129,7 +129,21 @@ $(document).ready(function ()
                     }
                     $(this).html(result);
                 });
-            }
+            }*/
+        }).done(function(msg) {
+            $("#note").ajaxComplete(function (event, request, settings)
+            {
+                if (msg == 'OK') //
+                {
+                    result = '<div class="notification_ok">Message sent, thank you!</div>';
+                    $("#fields").hide();
+                }
+                else
+                {
+                    result = msg;
+                }
+                $(this).html(result);
+            });
         });
         return false;
     });
