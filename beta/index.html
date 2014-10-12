@@ -774,7 +774,7 @@
 							<li><i class="icon-envelope"></i><span>bobby.s.speck@gmail.com</span></li>
 						</ul>
 					</div>
-					<div class="span4">
+					<!--<div class="span4">
 						<div id="note"></div>
 						<form action="#" id="ajax-form">
 						  <input type="text" name="name" placeholder="Name" required/>
@@ -791,21 +791,21 @@
 						        }).done(function() {
 						          //callback which can be used to show a thank you message
 						          //and reset the form
-						          alert("Sent, thanks for getting in touch!");
+						          //alert("Sent, thanks for getting in touch!");
 						        });
-						        return false; //to stop the form from submitting
+						        //return false; //to stop the form from submitting
 						      });
 						</script>
-					</div>
-					<!--<div class="span4">
-						<div id="note"></div>
-						<form class="form" id="ajax-contact-form" action="javascript:alert('Was send!');">
-						<input type="text" name="name" class="span4" placeholder="Name" required/>
-						<input type="text" class="span4" name="email" placeholder="Email" required/>
-						<textarea name="message" placeholder="Message" rows="8" class="span4"></textarea>
-						<button type="submit"  class="btn btn-success">SUBMIT</button>
-						</form>
 					</div>-->
+					<div class="span4">
+						<div id="note"></div>
+						<form class="form" id="ajax-contact-form" action="javascript:alert('Message was sent!');">
+							<input type="text" name="name" class="span4" placeholder="Name" required/>
+							<input type="text" class="span4" name="email" placeholder="Email" required/>
+							<textarea name="message" placeholder="Message" rows="8" class="span4"></textarea>
+							<button type="submit"  class="btn btn-success">SUBMIT</button>
+						</form>
+					</div>
 				</div><!-- .contact end -->
 			</section>
 			<!-- /Contact end -->
