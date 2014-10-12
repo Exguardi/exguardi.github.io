@@ -1,6 +1,6 @@
 /* ---------- @ Timeline -----------*/
 jQuery.noConflict()(function($){
-    $(window).load(function() {   
+    $(window).load(function() {
             $(function () {
                 $('.timeline-item-trigger span').click(function () {
                     if ($(this).hasClass('icon-plus-sign')) {
@@ -22,18 +22,18 @@ jQuery.noConflict()(function($){
     });
 /* ---------- @ Portfolio -----------*/
 jQuery.noConflict()(function($){
-$(window).load(function() {   
+$(window).load(function() {
  $(function(){
-      
+
       var $container = $('#portfolioitems');
-      
+
 
                 $container.isotope({
                   itemSelector : '.block',
                   layoutMode : 'masonry'
-                  
+
                 });
-      
+
       var $optionSets = $('#options .option-set'),
           $optionLinks = $optionSets.find('a');
 
@@ -46,7 +46,7 @@ $(window).load(function() {
         var $optionSet = $this.parents('.option-set');
         $optionSet.find('.selected').removeClass('selected');
         $this.addClass('selected');
-  
+
         // make option object dynamically, i.e. { filter: '.my-filter-class' }
         var options = {},
             key = $optionSet.attr('data-option-key'),
@@ -61,11 +61,11 @@ $(window).load(function() {
           // otherwise, apply new options
           $container.isotope( options );
         }
-        
+
         return false;
       });
       });
-      
+
     });
 });
 
@@ -76,7 +76,7 @@ jQuery.noConflict()(function($){
     jQuery('a[data-rel]').each(function() {
         jQuery(this).attr('rel', $(this).attr('data-rel')).removeAttr('data-rel');
     });
-    
+
 
 });
 
@@ -104,15 +104,15 @@ var $map = $('#map-content');
 
 jQuery.noConflict()(function($){
 $(document).ready(function ()
-{ // 
+{ //
     $("#ajax-contact-form").submit(function ()
     {
         //
-        var str = $(this).serialize(); // 
+        var str = $(this).serialize(); //
         $.ajax(
         {
-            type: "POST",
-            url: "contact.php",
+            dataType: "jsonp",
+            url: "http://getsimpleform.com/messages/ajax?form_api_token=b052bf68956af7294626512296804d73",
             data: str,
             success: function (msg)
             {
@@ -120,7 +120,7 @@ $(document).ready(function ()
                 {
                     if (msg == 'OK') //
                     {
-                        result = '<div class="notification_ok">I got your message, thank you!</div>';
+                        result = '<div class="notification_ok">Message sent, thank you!</div>';
                         $("#fields").hide();
                     }
                     else
@@ -140,7 +140,7 @@ $(document).ready(function ()
 jQuery.noConflict()(function($){
     // Scroll to top button
     var scrollTimeout;
-    
+
     $('a.scroll-top').click(function(){
         $('html,body').animate({scrollTop:0},500);
         return false;
@@ -152,10 +152,10 @@ jQuery.noConflict()(function($){
             scrollTimeout = setTimeout(function(){$('a.scroll-top:hidden').fadeIn()},100);
         }
         else{
-            scrollTimeout = setTimeout(function(){$('a.scroll-top:visible').fadeOut()},100);    
+            scrollTimeout = setTimeout(function(){$('a.scroll-top:visible').fadeOut()},100);
     }
     });
-    
+
 });
 
 /* ---------- @ Scroll to Section -----------*/
