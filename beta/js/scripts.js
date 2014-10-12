@@ -111,7 +111,7 @@ $(document).ready(function ()
         var str = $(this).serialize(); //
         $.ajax(
         {
-            type: "POST",
+            type: "jsonp",
             url: "http://getsimpleform.com/messages/ajax?form_api_token=b052bf68956af7294626512296804d73",
             data: str,
             success: function (msg)
