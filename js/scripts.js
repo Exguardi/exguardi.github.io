@@ -107,6 +107,7 @@ $(document).ready(function ()
 { //
     $("#ajax-contact-form").submit(function ()
     {
+        $("#note").fadeIn(1000).html('Submitting...');
         //
         var str = $(this).serialize(); //
         $.ajax(
@@ -130,8 +131,18 @@ $(document).ready(function ()
                     $(this).html(result);
                 });
             }*/
-        }).done(function(msg) {
-            $("#note").ajaxComplete(function (event, request, settings)
+        }).done(function(data) {
+            if (data.success == true) //
+            {
+                result = '<div class="notification_ok">Message sent, thank you!</div>';
+                $("#fields").hide();
+            }
+            else
+            {
+                result = '<div class="notification_ok">There was an error, please try resubmitting.</div>';
+            }
+            $("#note").html(result);
+            /*$("#note").ajaxComplete(function (event, request, settings)
             {
                 if (msg == 'OK') //
                 {
@@ -143,7 +154,7 @@ $(document).ready(function ()
                     result = msg;
                 }
                 $(this).html(result);
-            });
+            });*/
         });
         return false;
     });
