@@ -1,3 +1,12 @@
+/* jqm.navtab styles */
+.tab-content {
+    display:none;
+}
+.tab-content:first-child {
+    display:block;
+}
+
+/* chart styles */
 .chart rect {
   fill: steelblue;
 }
@@ -6,4 +15,27 @@
   fill: white;
   font: 10px sans-serif;
   text-anchor: end;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
 }

@@ -1,7 +1,48 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<title>MatrixRIB Hospital Yearly Savings Calculator</title>
-<link rel="stylesheet" href="css/styles.css"/>
-<svg class="chart"></svg>
-<script src="d3/d3.js"></script>
-<script src="js/scripts.js"></script>
+
+<head>
+     <meta charset="utf-8">
+     <title>MatrixRIB Hospital Yearly Savings Calculator</title>
+     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css"/>
+     <link rel="stylesheet" href="css/jquery.dropdown.css"/>
+     <link rel="stylesheet" href="css/styles.css"/>
+     <script data-main="js/main" src="js/require.js"></script>
+</head>
+
+<body>
+     <div id="wrapper">
+          <div id="header"></div>
+          <div id="content">
+               <div id="instructions" class="tab-content">
+                    <p>This is where instructions will go.</p>
+               </div>
+               <div id="calculator" class="tab-content">
+                    <p>This is where the calculator will go. Here's a sample <a href="#" type="button" data-dropdown="#dropdown-1">Dropdown</a> which needs styling.</p>
+                    <div id="dropdown-1" class="dropdown dropdown-tip">
+                        <ul class="dropdown-menu">
+                            <li><a href="#1">Item 1</a></li>
+                            <li><a href="#2">Item 2</a></li>
+                            <li><a href="#3">Item 3</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li><a href="#4">Item 4</a></li>
+                            <li><a href="#5">Item 5</a></li>
+                            <li><a href="#5">Item 6</a></li>
+                        </ul>
+                    </div>
+               </div>
+               <div id="chart" class="tab-content">
+                    <svg class="chart"></svg>
+               </div>
+          </div>
+          <div id="footer" data-role="footer" data-position="fixed">
+               <div data-role="navbar" data-iconpos="bottom">
+                    <ul>
+                         <li><a href="#" class="tab ui-btn-active ui-state-persist" data-href="instructions" data-icon="info">Instructions</a></li>
+                         <li><a href="#" class="tab" data-href="calculator" data-icon="home">Calculator</a></li>
+                         <li><a href="#" class="tab" data-href="chart" data-icon="gear">List Output</a></li>
+                         <li><a href="#" class="tab" data-href="chart" data-icon="grid">Bar Chart Output</a></li>
+                    </ul>
+               </div>
+          </div>
+     </div>
+</body>

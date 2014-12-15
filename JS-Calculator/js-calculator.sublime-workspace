@@ -1,0 +1,449 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"lib",
+				"lib/jquery"
+			],
+			[
+				"jquery",
+				"jquerym"
+			],
+			[
+				"jqu",
+				"jquery"
+			],
+			[
+				"jquer",
+				"jquerym"
+			],
+			[
+				"jq",
+				"jquery"
+			],
+			[
+				"cha",
+				"charts"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"cre",
+				"createBarChartVert"
+			],
+			[
+				"Anim",
+				"Anim_03"
+			],
+			[
+				"anim",
+				"anim-flags"
+			],
+			[
+				"grun",
+				"grunt"
+			],
+			[
+				"grunt",
+				"grunt-contrib-concat"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.html",
+			"settings":
+			{
+				"buffer_size": 2323,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/main.js",
+			"settings":
+			{
+				"buffer_size": 437,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/ui.js",
+			"settings":
+			{
+				"buffer_size": 1318,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/charts.js",
+			"settings":
+			{
+				"buffer_size": 3510,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/styles.css",
+			"settings":
+			{
+				"buffer_size": 458,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/User/Safari.sublime-build",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"read",
+				"ReadmePlease"
+			],
+			[
+				"fetch",
+				"Fetch: Manage"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 561.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Bobby-Mac/Documents/Professional/EP Visual Project/JS-Calculator/js/main.js",
+		"/Users/Bobby-Mac/Documents/Professional/EP Visual Project/JS-Calculator/js/charts.js",
+		"/Users/Bobby-Mac/Documents/Professional/EP Visual Project/JS-Calculator/js/ui.js",
+		"/Users/Bobby-Mac/Documents/Professional/EP Visual Project/JS-Calculator/scripts/ui.js",
+		"/Users/Bobby-Mac/Documents/Professional/EP Visual Project/JS-Calculator/scripts/require.js",
+		"/Users/Bobby-Mac/Documents/Professional/EP Visual Project/JS-Calculator/scripts/charts.js",
+		"/Users/Bobby-Mac/Documents/Professional/EP Visual Project/JS-Calculator/scripts/main.js",
+		"/Users/Bobby-Mac/Documents/Professional/EP Visual Project/JS-Calculator/main.html",
+		"/Users/Bobby-Mac/Documents/Professional/EP Visual Project/JS-Calculator/data/vertData.tsv",
+		"/Users/Bobby-Mac/Documents/Professional/EP Visual Project/JS-Calculator/data/horizData.tsv",
+		"/Users/Bobby-Mac/Documents/Professional/EP Visual Project/JS-Calculator/css/styles.css",
+		"/Users/Bobby-Mac/Documents/Professional/Portfolio/portfolio-web-repo/index.html",
+		"/Users/Bobby-Mac/Documents/Professional/EP Visual Project/JS-Calculator/js/scripts.js",
+		"/Users/Bobby-Mac/Documents/Professional/EP Visual Project/JS-Calculator/data/data.tsv",
+		"/Users/Bobby-Mac/Documents/Professional/Queasy Cats Project/queasy-cats-repo/.gitignore",
+		"/Users/Bobby-Mac/Documents/Professional/Queasy Cats Project/queasy-cats-repo/.gitignore.swp",
+		"/Users/Bobby-Mac/Desktop/rippleTest copy/Assets/rippleSharp.cs",
+		"/Users/Bobby-Mac/Desktop/d3/d3.js",
+		"/Users/Bobby-Mac/Desktop/Insta126/README.nfo",
+		"/Users/Bobby-Mac/Desktop/Ocean.shader",
+		"/Users/Bobby-Mac/Desktop/$watertouch_mouse_164.js",
+		"/Users/Bobby-Mac/Documents/Professional/EP Visual Project/Unity/XCode_Integration_Prototype/Assets/Editor/XcodeProjectMods/EPEggApp.projmods",
+		"/Users/Bobby-Mac/Documents/Professional/EP Visual Project/Unity/XCode_Integration_Prototype/Assets/Editor/XcodeProjectMods/JGActionSheet.projmods",
+		"/Users/Bobby-Mac/Desktop/lightsJS.js",
+		"/Users/Bobby-Mac/Documents/Professional/EP Visual Project/Tests/Maya_to_Unity_Pipeline/Unity/Unity_Pipeline_Example/Assets/Editor/XUPorter/Mods/JGActionSheet.projmods",
+		"/Users/Bobby-Mac/Development/iOS/XCode/XUPorter/Mods/GameKit.projmods",
+		"/Users/Bobby-Mac/Documents/Professional/EP Visual Project/Unity/XCode_Integration_Prototype/Assets/Editor/XUPorter/Mods/JGActionSheet.projmods",
+		"/Users/Bobby-Mac/Documents/Professional/EP Visual Project/Unity/XCode_Integration_Prototype/Assets/Editor/XcodeProjectMods/Flurry.projmods",
+		"/Users/Bobby-Mac/Documents/Professional/EP Visual Project/Unity/XCode_Integration_Prototype/Assets/Editor/XcodeProjectMods/Chartboost.projmods",
+		"/Users/Bobby-Mac/Documents/Professional/Portfolio/portfolio-web-repo/beta/js/scripts.js",
+		"/Users/Bobby-Mac/Documents/Professional/Portfolio/portfolio-web-repo/beta/index.html",
+		"/Users/Bobby-Mac/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/Bobby-Mac/Library/Application Support/Sublime Text 2/Packages/User/Chrome.sublime-build",
+		"/Users/Bobby-Mac/Documents/Professional/EP Visual Project/JSON/TestCubeLight.json",
+		"/Users/Bobby-Mac/Documents/Professional/Portfolio/portfolio-web-repo/CNAME",
+		"/Users/Bobby-Mac/Documents/Professional/Portfolio/rsspeck.com/index.html",
+		"/Users/Bobby-Mac/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/Users/Bobby-Mac/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+		"/Users/Bobby-Mac/Library/Application Support/Sublime Text 2/Packages/ReadmePlease/README.md",
+		"/Users/Bobby-Mac/Desktop/readme.txt",
+		"/Users/Bobby-Mac/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/Bobby-Mac/Library/Application Support/Sublime Text 2/Packages/User/Fetch.sublime-settings",
+		"/Users/Bobby-Mac/Library/Application Support/Sublime Text 2/Packages/User/trailing_spaces.sublime-settings"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"chart",
+			"viewport",
+			"fields",
+			"ajax-co",
+			".js"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.html",
+					"settings":
+					{
+						"buffer_size": 2323,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								571,
+								571
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 5,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 80.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/main.js",
+					"settings":
+					{
+						"buffer_size": 437,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								102,
+								102
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/ui.js",
+					"settings":
+					{
+						"buffer_size": 1318,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								281,
+								281
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 69.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/charts.js",
+					"settings":
+					{
+						"buffer_size": 3510,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "css/styles.css",
+					"settings":
+					{
+						"buffer_size": 458,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 31.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"",
+				"untitled"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 191.0,
+	"status_bar_visible": true
+}
