@@ -6,6 +6,8 @@ require(['charts'], function (charts) {
 $(function() {
     console.log( 'Ready!' );
 
+    $('.numInput').numeric();
+
     $('#content').children('div').each(function(e) {
       if (e != 0)
           $(this).hide();
@@ -29,9 +31,9 @@ $(function() {
         }
     });
 
-    // bind trigger for when #chart section is made visible
-    $('#chart').bind('isVisible', isVisible);
-    $('#chart').bind('isHidden', isHidden);
+    // bind trigger for when #chart-graph section is made visible
+    $('#chart-graph').bind('isVisible', isVisible);
+    $('#chart-graph').bind('isHidden', isHidden);
 
     return false;
 });

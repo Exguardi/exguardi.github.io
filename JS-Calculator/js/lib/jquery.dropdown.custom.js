@@ -102,7 +102,6 @@ if (jQuery) (function ($) {
     }
 
     function position() {
-
         var dropdown = $('.dropdown:visible').eq(0),
 			trigger = dropdown.data('dropdown-trigger'),
 			hOffset = trigger ? parseInt(trigger.attr('data-horizontal-offset') || 0, 10) : null,
@@ -117,6 +116,14 @@ if (jQuery) (function ($) {
 					trigger.position().left - (dropdown.outerWidth(true) - trigger.outerWidth(true)) - parseInt(trigger.css('margin-right'), 10) + hOffset :
 					trigger.position().left + parseInt(trigger.css('margin-left'), 10) + hOffset,
                 top: trigger.position().top + trigger.outerHeight(true) - parseInt(trigger.css('margin-top'), 10) + vOffset
+            });
+        } else if(dropdown.hasClass('dropdown-upside-down')) {
+            // ...or upside down
+            dropdown.css({
+                left: dropdown.hasClass('dropdown-anchor-right') ?
+                    trigger.position().left - (dropdown.outerWidth(true) - trigger.outerWidth(true)) - parseInt(trigger.css('margin-right'), 10) + hOffset :
+                    trigger.position().left + parseInt(trigger.css('margin-left'), 10) + hOffset,
+                top: trigger.position().top - dropdown.outerHeight(true) - 10 - vOffset
             });
         } else {
             // ...or relative to document

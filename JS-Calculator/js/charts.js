@@ -4,7 +4,7 @@ function CreateBarCharts() {
 }
 
 function DestroyBarCharts() {
-    $("#chart svg").remove();
+    $("#chart-graph svg").remove();
     console.log('Bar charts removed!');
 }
 
@@ -70,7 +70,7 @@ function createBarChartVert(oncomplete) {
          .orient("left")
          .ticks(10, "%");
 
-     var svg = d3.select("#chart").append("svg")//d3.select("body").append("svg")
+     var svg = d3.select("#chart-graph").append("svg")//d3.select("body").append("svg")
          .attr("width", width + margin.left + margin.right)
          .attr("height", height + margin.top + margin.bottom)
        .append("g")

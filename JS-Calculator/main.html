@@ -4,45 +4,281 @@
      <meta charset="utf-8">
      <title>MatrixRIB Hospital Yearly Savings Calculator</title>
      <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css"/>
-     <link rel="stylesheet" href="css/jquery.dropdown.css"/>
+     <link rel="stylesheet" href="css/jquery.dropdown.custom.css"/>
      <link rel="stylesheet" href="css/styles.css"/>
      <script data-main="js/main" src="js/require.js"></script>
 </head>
 
 <body>
      <div id="wrapper">
-          <div id="header"></div>
+          <div id="header" data-role="header" data-position="fixed">
+            <div data-role="navbar" data-iconpos="bottom">
+                <ul>
+                   <li><a href="#" class="tab ui-btn-active ui-state-persist" data-href="instructions" data-icon="info">Instructions</a></li>
+                   <li><a href="#" class="tab" data-href="calculator" data-icon="home">Calculator</a></li>
+                   <li><a href="#" class="tab" data-href="chart-list" data-icon="gear">List Output</a></li>
+                   <li><a href="#" class="tab" data-href="chart-graph" data-icon="grid">Bar Chart Output</a></li>
+                </ul>
+           </div>
+          </div>
           <div id="content">
                <div id="instructions" class="tab-content">
-                    <p>This is where instructions will go.</p>
+                    <table cellspacing='0' class="large"> <!-- cellspacing='0' is important, must stay -->
+                      <!-- Table Header -->
+                      <thead>
+                        <tr>
+                          <th>Instructions</th>
+                          <th>Notes</th>
+                        </tr>
+                      </thead>
+                      <!-- Table Header -->
+                      <!-- Table Body -->
+                      <tbody>
+                        <tr>
+                          <td>1. Select the Calculator tab and select your hospital from the drop down menu.</td>
+                          <td>Certain default input parameters will now prepopulate.</td>
+                        </tr>
+                        <tr>
+                          <td>2. Fill in as many orange input variables as you have data for.</td>
+                          <td>These will customize the calculation to your hospital's cost infrastructure.</td>
+                        </tr>
+                        <tr>
+                          <td>3. Check green output cells.</td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
                </div>
                <div id="calculator" class="tab-content">
-                    <p>This is where the calculator will go. Here's a sample <a href="#" type="button" data-dropdown="#dropdown-1">Dropdown</a> which needs styling.</p>
-                    <div id="dropdown-1" class="dropdown dropdown-tip">
-                        <ul class="dropdown-menu">
-                            <li><a href="#1">Item 1</a></li>
-                            <li><a href="#2">Item 2</a></li>
-                            <li><a href="#3">Item 3</a></li>
-                            <li class="dropdown-divider"></li>
-                            <li><a href="#4">Item 4</a></li>
-                            <li><a href="#5">Item 5</a></li>
-                            <li><a href="#5">Item 6</a></li>
-                        </ul>
+                    <!--<p>Here is a nice hospital-selection dropdown: <select data-placeholder="Choose a Hospital" style="width:350px;" multiple class="chosen-select"></p>-->
+                    <table cellspacing='0' class="calculator-dropdown"> <!-- cellspacing='0' is important, must stay -->
+                      <!-- Table Header -->
+                      <thead>
+                        <tr>
+                          <th>Hospital</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <select data-role="none">
+                              <option value="hospital1">Hospital 1</option>
+                              <option value="hospital2">Hospital 2</option>
+                              <option value="hospital3">Hospital 3</option>
+                              <option value="hospital4">Hospital 4</option>
+                            </select>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table cellspacing='0' class="calculator-input"> <!-- cellspacing='0' is important, must stay -->
+                      <!-- Table Header -->
+                      <thead>
+                        <tr>
+                          <th>Calculation Variables</th>
+                          <th></th>
+                          <th>Default Values</th>
+                          <th>Variable Used in Calculation</th>
+                          <th>Notes</th>
+                        </tr>
+                      </thead>
+                      <!-- Table Header -->
+                      <!-- Table Body -->
+                      <tbody>
+                        <tr>
+                          <td>Total Rib Fracture Patients</td>
+                          <td><input type="text" class="numInput" data-role="none"></input></td>
+                          <td></td>
+                          <td></td>
+                          <td>Default based on hospital specific estimate from 2014 IMS data</td>
+                        </tr><!-- Table Row -->
+                        <tr class="even">
+                          <td>...with flail chest</td>
+                          <td><input type="text" class="numInput" data-role="none"></input></td>
+                          <td></td>
+                          <td></td>
+                          <td>Default estimated based on national average case distribution in 2010 HCUP data. Stable trend as crossreferenced with Premier Data from 2008 -2012.</td>
+                        </tr><!-- Darker Table Row -->
+                        <tr>
+                          <td>ICU LOS (days)</td>
+                          <td><input type="text" class="numInput" data-role="none"></input></td>
+                          <td></td>
+                          <td></td>
+                          <td>Default estimated based on Target value plus expected mean decrease of 4.8 days as reported in J Am Coll Surg 2013;216:302-311</td>
+                        </tr>
+                        <tr class="even">
+                          <td>ICU (cost / day)</td>
+                          <td><input type="text" class="numInput" data-role="none"></input></td>
+                          <td></td>
+                          <td></td>
+                          <td>Default based on BMC Health Services Research 2008, 8:242. Updated to $2014 using the medical care component of the consumer price index</td>
+                        </tr>
+                        <tr>
+                          <td>Mech. Ventilation (days)</td>
+                          <td><input type="text" class="numInput" data-role="none"></input></td>
+                          <td></td>
+                          <td></td>
+                          <td>Default estimated based on Target value plus expected mean decrease of 7.5 days as reported in J Am Coll Surg 2013;216:302-311</td>
+                        </tr>
+                        <tr class="even">
+                          <td>Mech. Ventilation (cost / day)</td>
+                          <td><input type="text" class="numInput" data-role="none"></input></td>
+                          <td></td>
+                          <td></td>
+                          <td>Default based on BMC Health Services Research 2008, 8:242. Updated to $2014 using the medical care component of the consumer price index</td>
+                        </tr>
+                        <tr>
+                          <td>Total LOS (days)</td>
+                          <td><input type="text" class="numInput" data-role="none"></input></td>
+                          <td></td>
+                          <td></td>
+                          <td>Default estimated based on Target value plus expected mean decrease of 4.0 days as reported in J Am Coll Surg 2013;216:302-311</td>
+                        </tr>
+                        <tr class="even">
+                          <td>Non-ICU (cost / day)</td>
+                          <td><input type="text" class="numInput" data-role="none"></input></td>
+                          <td></td>
+                          <td></td>
+                          <td>Default based on BMC Health Services Research 2008, 8:242. Updated to $2014 using the medical care component of the consumer price index</td>
+                        </tr>
+                        <tr>
+                          <td>Pneumonia infection rate</td>
+                          <td><input type="text" class="numInput" data-role="none"></input></td>
+                          <td></td>
+                          <td></td>
+                          <td>Default estimated based on Target value plus expected mean risk difference of 0.31 as reported in J Am Coll Surg 2013;216:302-311</td>
+                        </tr>
+                        <tr class="even">
+                          <td>Pneumonia infection case cost</td>
+                          <td><input type="text" class="numInput" data-role="none"></input></td>
+                          <td></td>
+                          <td></td>
+                          <td>Default based on national average case cost in 2011 HCUP data. Updated to $2014 using the medical care component of the consumer price index</td>
+                        </tr>
+                        <tr>
+                          <td>OR time rib fixation (min)</td>
+                          <td><input type="text" class="numInput" data-role="none"></input></td>
+                          <td></td>
+                          <td></td>
+                          <td>Default based on Injury, Volume 44, Issue 2, Feb 2013, pages 232-238.</td>
+                        </tr>
+                        <tr class="even">
+                          <td>OR (cost / min)</td>
+                          <td><input type="text" class="numInput" data-role="none"></input></td>
+                          <td></td>
+                          <td></td>
+                          <td>Default OR costs estimated to be $25 per minute: derived from operating room charges of $62/minute updated to $2013 using the Medical Care Component of CPI-U and converted to costs using national average costs-to-charge ratio of 0.30, informed by the following data sources: Shippert RD. A study of time-dependent operating room fees and how to save $100,000 by using time-saving products. American Journal of Cosmetic Surgery 2005; 22 (25-34 and Dalton K, Freeman S, Bragg A, Refining cost to charge ratios for calculating APC and MS-DRG relative payment weights. RTI International. CMS Contact No HHSM-500-2005-0029I. July 2008</td>
+                        </tr>
+                        <tr>
+                          <td>Implant cost</td>
+                          <td><input type="text" class="numInput" data-role="none"></input></td>
+                          <td></td>
+                          <td></td>
+                          <td>Default based on MatrixRIB list price</td>
+                        </tr>
+                      </tbody>
+                      <!-- Table Body -->
+                    </table>
+                    <table cellspacing='0' class="calculator-input"> <!-- cellspacing='0' is important, must stay -->
+                      <!-- Table Header -->
+                      <thead>
+                        <tr>
+                          <th>Targets</th>
+                          <th></th>
+                          <th>Default Values</th>
+                          <th>Variable Used in Calculation</th>
+                          <th>Notes</th>
+                        </tr>
+                      </thead>
+                      <!-- Table Header -->
+                      <!-- Table Body -->
+                      <tbody>
+                        <tr>
+                          <td>ICU LOS (days)</td>
+                          <td><input type="text" class="numInput" data-role="none"></input></td>
+                          <td></td>
+                          <td></td>
+                          <td>Default based on <i>Injury</i>, Volume 44, Issue 2, Feb 2013, pages 232-238</td>
+                        </tr><!-- Table Row -->
+                        <tr class="even">
+                          <td>Mech. Ventilation (days)</td>
+                          <td><input type="text" class="numInput" data-role="none"></input></td>
+                          <td></td>
+                          <td></td>
+                          <td>Default based on <i>Injury</i>, Volume 44, Issue 2, Feb 2013, pages 232-238</td>
+                        </tr>
+                        <tr>
+                          <td>Total LOS (days)</td>
+                          <td><input type="text" class="numInput" data-role="none"></input></td>
+                          <td></td>
+                          <td></td>
+                          <td>Default based on <i>Injury</i>, Volume 44, Issue 2, Feb 2013, pages 232-238</td>
+                        </tr>
+                        <tr class="even">
+                          <td>Pneumonia infection rate</td>
+                          <td><input type="text" class="numInput" data-role="none"></input></td>
+                          <td></td>
+                          <td></td>
+                          <td>Default based on <i>Injury</i>, Volume 44, Issue 2, Feb 2013, pages 232-238</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table cellspacing='0' class="calculator-output"> <!-- cellspacing='0' is important, must stay -->
+                      <!-- Table Header -->
+                      <thead>
+                        <tr>
+                          <th>Economic Outputs</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <!-- Table Header -->
+                      <!-- Table Body -->
+                      <tbody>
+                        <tr>
+                          <td>ICU LOS (days)</td>
+                          <td></td>
+                        </tr><!-- Table Row -->
+                        <tr class="even">
+                          <td>Mech. Ventilation (days)</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Non-ICU (days)</td>
+                          <td></td>
+                        </tr>
+                        <tr class="even">
+                          <td>Pneumonia infection rate</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>OR rib fixation costs</td>
+                          <td></td>
+                        </tr>
+                        <tr class="even">
+                          <td>Implant costs</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Total savings potential</td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <p><a href="#" type="button" data-dropdown="#dropdown-1">Disclaimer</a></p>
+                    <div id="dropdown-1" class="dropdown dropdown-tip dropdown-upside-down">
+                        <div class="dropdown-panel">
+                          The information contained herein is gathered from various resources and is subject to change without notice. This calculator/tool is being provided for general illustrative and informational purposes only. This calculator/tool is not intended to provide specific advice or recommendations in any circumstances. It may not cover apsects of your particular situation, included, but not limited to patient mix, costs of care and appropriateness of care. DepuySynthes assumes no responsibility for any errors or omissions within the calculator/tool. Under no circumstances shall DepuySynthes be held liable for any loss or damage, which may be attributed to the reliance and use of the calculator/tool.
+                        </div>
                     </div>
                </div>
-               <div id="chart" class="tab-content">
+               <div id="chart-list" class="tab-content">
+
+               </div>
+               <div id="chart-graph" class="tab-content">
                     <svg class="chart"></svg>
                </div>
           </div>
-          <div id="footer" data-role="footer" data-position="fixed">
-               <div data-role="navbar" data-iconpos="bottom">
-                    <ul>
-                         <li><a href="#" class="tab ui-btn-active ui-state-persist" data-href="instructions" data-icon="info">Instructions</a></li>
-                         <li><a href="#" class="tab" data-href="calculator" data-icon="home">Calculator</a></li>
-                         <li><a href="#" class="tab" data-href="chart" data-icon="gear">List Output</a></li>
-                         <li><a href="#" class="tab" data-href="chart" data-icon="grid">Bar Chart Output</a></li>
-                    </ul>
-               </div>
+          <div id="footer">
           </div>
      </div>
 </body>

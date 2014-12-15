@@ -38,6 +38,16 @@
   border-bottom-color: rgba(0, 0, 0, 0.2);
   display: inline-block;
 }
+.dropdown.dropdown-tip.dropdown-upside-down:before {
+  top: auto;
+  bottom: -6px;
+  border: 0px;
+  border-color: rgba(0, 0, 0, 0);
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #CCC;
+  border-top-color: rgba(0, 0, 0, 0.2);
+}
 
 .dropdown.dropdown-tip.dropdown-anchor-right:before {
 	left: auto;
@@ -53,6 +63,16 @@
   border-right: 6px solid transparent;
   border-bottom: 6px solid #FFF;
   display: inline-block;
+}
+.dropdown.dropdown-tip.dropdown-upside-down:after {
+  top: auto;
+  bottom: -5px;
+  left: 10px;
+  border: 0px;
+  border-color: rgba(0, 0, 0 ,0);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #FFF;
 }
 
 .dropdown.dropdown-tip.dropdown-anchor-right:after {
