@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>  <html class="ie ie6 lte9 lte8 lte7"> <![endif]-->
+<!--[if IE 7]>     <html class="ie ie7 lte9 lte8 lte7"> <![endif]-->
+<!--[if IE 8]>     <html class="ie ie8 lte9 lte8"> <![endif]-->
+<!--[if IE 9]>     <html class="ie ie9 lte9"> <![endif]-->
+<!--[if gt IE 9]>  <html> <![endif]-->
+<!--[if !IE]><!--> <html>             <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, maximum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <link rel="stylesheet" href="css/screen.css" data-embed>
+  <title>DePuy Synthes</title>
+  <script>
+  g_history_mark = 1;
+  bmtitle = 'Advanced Approaches to the Wrist - Search';
+  </script>
+</head>
+<body class="ios search-page">
+  <a class="md-trigger is-hidden" id="md-query" data-modal="modal-query">show query modal</a>
+
+  <div class="wrapper">
+
+      <div class="masthead">
+        <form id="form_search" class="masthead-search">
+         <!--  <label for="masthead-search-toggle" class="masthead-search-toggle">Toggle Search</label>
+          <input type="checkbox" id="masthead-search-toggle" class="isHidden"/>
+          <div class="masthead-search-indicator"></div>
+          <div class="masthead-search-search">
+            <label for="masthead-search-search" class="isHidden">Search</label>
+            <input type="search" id="masthead-search-search"/>
+          </div> -->
+  
+  
+          <div id="label"><label for="search-terms" id="search-label">search</label></div>
+          <div id="input"><input type="text" name="search-terms" id="search-terms" placeholder="Enter search terms..."></div>
+  
+        </form>
+      </div>
+
+    <header>
+      <div class="branding">
+        <div class="row" style="margin-bottom:0">
+          <div class="col span4-1">
+            <h1 class="logo">DePuy Synthes</h1>
+          </div>
+          <div class="col span8-5">
+            <h1 class="topic">Advanced Surgical Approaches to the Wrist</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="output"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>M1266B<br>&copy; DePuy Synthes Companies 2014<br>All Rights Reserved.</p>
+  </footer>
+
+  <div class="backdrop is-hidden">
+    <div class="stage-controls">
+      <a href="#" class="btn-stage-close">x</a>
+    </div>
+    <div class="stage"></div>
+    <div class="stage-nav">
+      <a href="#" class="btn-stage-prev">&lt;</a>
+      <a href="#" class="btn-stage-next">&gt;</a>
+    </div>
+  </div>
+
+  <div class="md-modal md-effect-3" id="modal-query">
+    <div class="md-content">
+      <h3>Looking for something?</h3>
+      <section class="modal">
+        <p class="is-centered" style="margin: 1em 0 .5em">Sorry, we're not sure what you're searching for.</p>
+      </section>
+      <div class="is-centered" style="padding-top:0;">
+        <form id="md-form-query">
+          <input type="text" name="md-search-input" id="md-search-input" placeholder="Search for&hellip;">
+          <button class="md-close" style="display: none">Cancel</button>
+          <!-- <button id="md-search-go" style="display: inline-block" class="cta">Search</button> -->
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="md-overlay"></div><!-- the overlay element -->
+
+  <script src="js/data.min.js" data-embed></script>
+  <script src="js/search.min.js" data-embed></script>
+
+  <!-- <script src="http://localhost:35729/livereload.js"></script> -->
+</body>
+</html>

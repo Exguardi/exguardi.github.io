@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>  <html class="ie ie6 lte9 lte8 lte7"> <![endif]-->
+<!--[if IE 7]>     <html class="ie ie7 lte9 lte8 lte7"> <![endif]-->
+<!--[if IE 8]>     <html class="ie ie8 lte9 lte8"> <![endif]-->
+<!--[if IE 9]>     <html class="ie ie9 lte9"> <![endif]-->
+<!--[if gt IE 9]>  <html> <![endif]-->
+<!--[if !IE]><!--> <html>             <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, maximum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <link rel="stylesheet" href="css/screen.css" data-embed>
+  <title>DePuy Synthes</title>
+  <script>IOS = 0;</script>
+  <script src="js-ios/verbs.js"></script>
+  <script>
+  g_history_mark = 1;
+  IOS            = 1;
+  bmtitle        = 'Advanced Approaches to the Wrist - Video Player';
+  </script>
+</head>
+<body class="ios template-player">
+  <div class="wrapper-player">
+
+      <div class="masthead">
+        <form id="form_search" class="masthead-search">
+         <!--  <label for="masthead-search-toggle" class="masthead-search-toggle">Toggle Search</label>
+          <input type="checkbox" id="masthead-search-toggle" class="isHidden"/>
+          <div class="masthead-search-indicator"></div>
+          <div class="masthead-search-search">
+            <label for="masthead-search-search" class="isHidden">Search</label>
+            <input type="search" id="masthead-search-search"/>
+          </div> -->
+  
+  
+          <div id="label"><label for="search-terms" id="search-label">search</label></div>
+          <div id="input"><input type="text" name="search-terms" id="search-terms" placeholder="Enter search terms..."></div>
+  
+        </form>
+      </div>
+
+    <header>
+        <div class="branding">
+          <div class="row" style="margin-bottom:0">
+            <div class="col span4-1">
+              <h1 class="logo">DePuy Synthes</h1>
+            </div>
+            <div class="col span8-5 text-right">
+              <h1 class="topic">Advanced Surgical Approaches to the Wrist</h1>
+            </div>
+          </div>
+        </div>
+    </header>
+    <section class="player">
+      <div class="video-stage">
+        <div class="video">
+          <img src="ui/placeholder-video-white.jpg" alt="video placeholder">
+        </div>
+      </div>
+      <div class="video-controls">
+        <div class="video-title">
+          <h1 class="data-category"></h1>
+          <h2 class="data-title"></h2>
+        </div>
+        <div class="video-buttons">
+          <a href="#" class="btn-pure btn-pure-min btn-prev"><i class="fa fa-caret-left"></i> Previous</a>
+          <a href="#" class="btn-pure btn-pure-min btn-next">Next <i class="fa fa-caret-right"></i></a>
+        </div>
+      </div>
+    </section>
+    <section class="additional-content">
+      <div class="player-nav ios-scrolling">
+                <a class="btn-primary" href="#surgical_approaches">Surgical Approaches</a>
+                <section data-section="surgical_approaches" class="nav-section-primary is-hidden">
+                  <div class="nav-bios">
+                    <div class="bio striped" data-doctor-info="jupiterjesse"></div>
+                  </div>
+                  <a href="#sa-1" class="btn btn-gt toggle-data-group"><span class="gt">&gt;</span> <span class="media-title">Standard Volar Approach to the Distal Radius (Henry)</span></a>
+                  <div class="is-hidden is-hidden-desktop" data-group="sa-1"></div>
+                  <a href="#sa-2" class="btn btn-gt toggle-data-group"><span class="gt">&gt;</span> <span class="media-title">Extensile Approach to the Ulna</span></a>
+                  <div class="is-hidden is-hidden-desktop" data-group="sa-2"></div>
+                  <a href="#sa-3" class="btn btn-gt toggle-data-group"><span class="gt">&gt;</span> <span class="media-title">Dorsal Approach to the Distal Radius</span></a>
+                  <div class="is-hidden is-hidden-desktop" data-group="sa-3"></div>
+                  <a href="#sa-4" class="btn btn-gt toggle-data-group"><span class="gt">&gt;</span> <span class="media-title">Dorsal Approach to the Ulna</span></a>
+                  <div class="is-hidden is-hidden-desktop" data-group="sa-4"></div>
+                </section>
+        
+                <a class="btn-primary" href="#image_gallery">Image Gallery</a>
+                <section data-section="image_gallery" class="is-hidden">
+                  <a href="#images-1" class="btn btn-gt toggle-data-group"><span class="gt">&gt;</span> <span class="media-title">Standard Volar Approach to the Distal Radius (Henry)</span></a>
+                  <div class="is-hidden is-hidden-desktop" data-group="images-1"></div>
+                  <a href="#images-2" class="btn btn-gt toggle-data-group"><span class="gt">&gt;</span> <span class="media-title">Extensile Approach to the Ulna</span></a>
+                  <div class="is-hidden is-hidden-desktop" data-group="images-2"></div>
+                  <a href="#images-3" class="btn btn-gt toggle-data-group"><span class="gt">&gt;</span> <span class="media-title">Dorsal Approach to the Distal Radius</span></a>
+                  <div class="is-hidden is-hidden-desktop" data-group="images-3"></div>
+                  <a href="#images-4" class="btn btn-gt toggle-data-group"><span class="gt">&gt;</span> <span class="media-title">Dorsal Approach to the Ulna</span></a>
+                  <div class="is-hidden is-hidden-desktop" data-group="images-4"></div>
+        
+                  <!-- <div class="subheading">Extendend Lateral Approach to the Wrist</div>
+                  <a href="#" class="btn btn-thumb">
+                    <figure>
+                      <img src="http://placehold.it/60x60" alt="thumb">
+                      <figcaption>Standard Volar Approach to the Distal Radius (Henry)</figcaption>
+                    </figure>
+                  </a>
+                  <a href="#" class="btn btn-thumb">
+                    <figure>
+                      <img src="http://placehold.it/60x60" alt="thumb">
+                      <figcaption>Standard Volar Approach to the Distal Radius (Henry)</figcaption>
+                    </figure>
+                  </a> -->
+                </section>
+        
+                <a class="btn-primary" href="#discussions">Discussions</a>
+                <section class="nav-section-primary is-hidden" data-section="discussions">
+                  <a href="#discuss-1" class="btn btn-gt toggle-data-group"><span class="gt">&gt;</span> <span class="media-title">Current Perspectives on the Distal Radius by Jesse Jupiter</span></a>
+                  <div class="is-hidden is-hidden-desktop" data-group="discuss-1">
+                    <div class="nav-bios"><div class="bio striped" data-doctor-info="jupiterjesse"></div></div>
+                  </div>
+                  <a href="#discuss-2" class="btn btn-gt toggle-data-group"><span class="gt">&gt;</span> <span class="media-title">Tips and Pearls from the Experts: Distal Radius</span></a>
+                  <div class="is-hidden is-hidden-desktop" data-group="discuss-2">
+                    <div class="nav-bios">
+                      <div class="bio striped" data-doctor-info="jupiterjesse"></div>
+                      <div class="bio" data-doctor-info="capojohn"></div>
+                      <div class="bio striped" data-doctor-info="ruchdavid"></div>
+                      <div class="bio" data-doctor-info="nossamanbrent"></div>
+                      <div class="bio striped" data-doctor-info="hollisteranne"></div>
+                    </div>
+                  </div>
+                  <a href="#discuss-3" class="btn btn-gt toggle-data-group"><span class="gt">&gt;</span> <span class="media-title">Case Discussion: Intra-articular Fracture of the Distal Radius</span></a>
+                  <div class="is-hidden is-hidden-desktop" data-group="discuss-3">
+                    <div class="nav-bios">
+                      <div class="bio striped" data-doctor-info="ruchdavid"></div>
+                      <div class="bio" data-doctor-info="hollisteranne"></div>
+                      <div class="bio striped" data-doctor-info="capojohn"></div>
+                    </div>
+                  </div>
+                  <a href="#discuss-4" class="btn btn-gt toggle-data-group"><span class="gt">&gt;</span> <span class="media-title">Surgical Case Example: Volar Approach to an Extra-articular Distal Radius Fracture</span></a>
+                  <div class="is-hidden is-hidden-desktop" data-group="discuss-4">
+                    <div class="nav-bios">
+                      <div class="bio striped" data-doctor-info="nossamanbrent"></div>
+                    </div>
+                  </div>
+                  <a href="#discuss-5" class="btn btn-gt toggle-data-group"><span class="gt">&gt;</span> <span class="media-title">Case Discussion: C-Type Distal Radius Fracture with Associated Injuries</span></a>
+                  <div class="is-hidden is-hidden-desktop" data-group="discuss-5">
+                    <div class="nav-bios">
+                      <div class="bio striped" data-doctor-info="higginsthomas"></div>
+                      <div class="bio" data-doctor-info="capojohn"></div>
+                      <div class="bio striped" data-doctor-info="cristbrett"></div>
+                    </div>
+                  </div>
+                </section>
+        
+      </div>
+      <div class="script">
+        <div class="script-text ios-scrolling"></div>
+      </div>
+      <div class="doctor-info ios-scrolling">
+
+        <div class="nav-bios-hidden is-hidden" data-bio-link="sa-1">
+          <div class="bio" data-doctor-info="jupiterjesse"></div>
+        </div>
+        <div class="nav-bios-hidden is-hidden" data-bio-link="sa-2">
+          <div class="bio" data-doctor-info="jupiterjesse"></div>
+        </div>
+        <div class="nav-bios-hidden is-hidden" data-bio-link="sa-3">
+          <div class="bio" data-doctor-info="jupiterjesse"></div>
+        </div>
+        <div class="nav-bios-hidden is-hidden" data-bio-link="sa-4">
+          <div class="bio" data-doctor-info="jupiterjesse"></div>
+        </div>
+
+        <div class="nav-bios-hidden is-hidden" data-bio-link="discuss-1">
+          <div class="bio" data-doctor-info="jupiterjesse"></div>
+        </div>
+        <div class="nav-bios-hidden is-hidden" data-bio-link="discuss-2">
+          <div class="bio" data-doctor-info="jupiterjesse"></div>
+          <div class="bio" data-doctor-info="capojohn"></div>
+          <div class="bio" data-doctor-info="ruchdavid"></div>
+          <div class="bio" data-doctor-info="nossamanbrent"></div>
+          <div class="bio" data-doctor-info="hollisteranne"></div>
+        </div>
+        <div class="nav-bios-hidden is-hidden" data-bio-link="discuss-3">
+          <div class="bio" data-doctor-info="ruchdavid"></div>
+          <div class="bio" data-doctor-info="hollisteranne"></div>
+          <div class="bio" data-doctor-info="capojohn"></div>
+        </div>
+        <div class="nav-bios-hidden is-hidden" data-bio-link="discuss-4">
+          <div class="bio" data-doctor-info="nossamanbrent"></div>
+        </div>
+        <div class="nav-bios-hidden is-hidden" data-bio-link="discuss-5">
+          <div class="bio" data-doctor-info="higginsthomas"></div>
+          <div class="bio" data-doctor-info="capojohn"></div>
+          <div class="bio" data-doctor-info="cristbrett"></div>
+        </div>
+
+      </div>
+    </section>
+    <div class="footer">
+      <p>M1266B<br>&copy; DePuy Synthes Companies 2014<br>All Rights Reserved.</p>
+    </div>
+  </div>
+
+  <div class="cover-white"></div>
+
+  <script src="js/data.min.js" data-embed></script>
+  <script src="js/scripts.min.js" data-embed></script>
+
+  <!-- <script src="http://localhost:35729/livereload.js"></script> -->
+</body>
+</html>
