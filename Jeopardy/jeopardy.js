@@ -2,7 +2,7 @@ $(function(){
     $('#game-load-modal').modal('show');
     //openingTheme.play();
     $('#game-load-input-button').click(function(){
-        $.getJSON("https://www.rsspeck.com/Jeopardy/sample.json?callback=?",
+        $.getJSON("https://www.rsspeck.com/Jeopardy/board.json?callback=?",
             function(data){
                 alert('TEST');
                 jsonData = data;
