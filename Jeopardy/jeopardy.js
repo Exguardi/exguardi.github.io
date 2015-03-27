@@ -4,7 +4,7 @@ $(function(){
     $('#game-load-input-button').click(function(){
         $.getJSON("https://www.rsspeck.com/Jeopardy/sample.json?callback=?",
             function(data){
-                alert('TEST');
+                alert("Data is " + data);
                 jsonData = data;
                 currentBoard = jsonData[rounds[currentRound]];
                 loadBoard();
