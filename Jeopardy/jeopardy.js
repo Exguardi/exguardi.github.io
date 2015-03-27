@@ -1,8 +1,21 @@
 $(function(){
     $('#game-load-modal').modal('show');
-    openingTheme.play();
+    //openingTheme.play();
     $('#game-load-input-button').click(function(){
-        var file = $('#input-file').prop('files')[0];
+        $.getJSON("https://www.rsspeck.com/Jeopardy/board.json?callback=?",
+            function(data){
+                alert('TEST');
+                jsonData = data;
+                currentBoard = jsonData[rounds[currentRound]];
+                loadBoard();
+                /*openingTheme.pause();
+                openingTheme.currentTime = 0;
+                var boardFillSound = new Audio('./sounds/board_fill.mp3');
+                boardFillSound.play();*/
+                $('#game-load-modal').modal('hide');
+            });
+    });
+        /*var file = $('#input-file').prop('files')[0];
         if ($('#input-file').val() != '') {
             var reader = new FileReader();
             reader.readAsText(file);
@@ -23,7 +36,7 @@ $(function(){
             };
 
         }
-    });
+    });*/
 
     $('#next-round').unbind('click').click(function(e){
         e.stopPropagation();
@@ -160,10 +173,7 @@ var timerMaxCount = 5;
 var timerObject;
 var timerCount;
 var gameDataFile;
-//var openingTheme = new Audio('./sounds/theme.mp3');
-var openingTheme = new Howl({
-  urls: ['sounds/theme.mp3']
-});
+var openingTheme = new Audio('./sounds/theme.mp3');
 
 function runTimer() {
     timerObject = setTimeout(function(){
