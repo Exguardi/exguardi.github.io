@@ -1833,11 +1833,11 @@
 /* Contact */
 
 	#contact {
-		position: relative;
+		/*position: relative;*/
 		width:575;
 		height:580;
-		margin-top:-150;
-		margin-left:-36;
+		/*margin-top:-150;
+		margin-left:-36;*/
 	}
 
 /* Form */
