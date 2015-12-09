@@ -110,6 +110,11 @@
 						$intro.prependTo($sidebar);
 					});
 
+	 // Contact --- DEPRECATED ---
+	 		/*
+	 		var $contact = $('#contact')
+			$contact.html("<iframe scrolling='no' width='650' height='730' src='https://docs.google.com/forms/d/1Jo2gDGADb4pOO3gj0OVu6GYpFQVGIU0Y0QqOXeFSZR4/viewform?embedded=true'>Loading...</iframe>")
+			*/
 	});
 
 })(jQuery);

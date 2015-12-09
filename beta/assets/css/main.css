@@ -1830,15 +1830,15 @@
 				color: rgba(160, 160, 160, 0.3) !important;
 			}
 
-/* Contact */
+/* Contact --- DEPRECATED --- */
 
-	#contact {
+	/*#contact {
 		position: relative;
 		width:575;
 		height:580;
 		margin-top:-150;
 		margin-left:-36;
-	}
+	}*/
 
 /* Form */
 
