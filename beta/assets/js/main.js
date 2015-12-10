@@ -101,22 +101,28 @@
 		// Nav (Header)
 			$header = $('header');
 			var pathname = document.location.href;
+			if(pathname!=null) { // make sure we don't execute this on null path
+				// Highlight link for current page
+				if(pathname!="https://speck.tech/beta" || pathname.indexOf('file://') > -1) {
+					pathname = document.location.href.split("/").slice(-1);
 
-			// Highlight link for current page
-			if(pathname!="https://speck.tech/beta" || pathname.indexOf('file://') > -1) {
-				// add exception for the Index which is not in the normal group
-				$header.find('h1').css("font-weight", 100);
-		  	var pathname = document.location.href.match(/[^\/]+$/)[0];
-
-				var $links = $header.find('ul').first().find('li a');
-				$links.each(function(index) {
-					console.log($(this).attr('href').indexOf(pathname));
-					if( $(this).attr('href').indexOf(pathname) > -1 ) {
-						$(this).css("font-weight", 800);
-					} else {
-						$(this).css("font-weight", 100);
+					var $links = $header.find('ul').first().find('li a');
+					var failures = 0;
+					$links.each(function(index) {
+						console.log($(this).attr('href').indexOf(pathname));
+						if( $(this).attr('href').indexOf(pathname) > -1 ) {
+							$(this).css("font-weight", 800);
+						} else {
+							$(this).css("font-weight", 100);
+							failures++;
+						}
+					});
+					if(failures==$links.length) { // add exception for the Index which is not in the normal group
+						$header.find('h1').css("font-weight", 100);
 					}
-				});
+				}
+			} else {
+				console.warn('Page location failed to parse. Navigation links may not highlight correctly.');
 			}
 
 
