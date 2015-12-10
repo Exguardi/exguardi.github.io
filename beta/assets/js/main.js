@@ -105,19 +105,19 @@
 				// Highlight link for current page
 				if(pathname!="https://speck.tech/beta" || pathname.indexOf('file://') > -1) {
 					pathname = document.location.href.split("/").slice(-1);
-					console.log(pathname);
-
-					var $links = $header.find('ul').first().find('li a');
 					var failures = 0;
-					$links.each(function(index) {
-						console.log($(this).attr('href').indexOf(pathname));
-						if( $(this).attr('href').indexOf(pathname) > -1 ) {
-							$(this).css("font-weight", 800);
-						} else {
-							$(this).css("font-weight", 100);
-							failures++;
-						}
-					});
+					var $links = $header.find('ul').first().find('li a');
+					if(pathname!="") { // disregard site root
+						$links.each(function(index) {
+							console.log($(this).attr('href').indexOf(pathname));
+							if( $(this).attr('href').indexOf(pathname) > -1 ) {
+								$(this).css("font-weight", 800);
+							} else {
+								$(this).css("font-weight", 100);
+								failures++;
+							}
+						});
+					}
 					if(failures<$links.length) { // add exception for the Index which is not in the normal group
 						$header.find('h1').css("font-weight", 100);
 					}
