@@ -98,6 +98,24 @@
 					}, 100);
 				});
 
+		// Nav (Header)
+			$header = $('header');
+
+			// Highlight link for current page
+		  var pathname = document.location.href.match(/[^\/]+$/)[0];
+			var $links = $header.find('ul').first().find('li a');
+			$links.each(function(index) {
+				if(pathname==$(this).attr('href')) {
+					$(this).css("font-weight", 800);
+				} else {
+					$(this).css("font-weight", 100);
+				}
+			});
+			// add exception for the Index which is not in the normal group
+			if(pathname!="index.html"){
+				$header.find('h1').css("font-weight", 100);
+			}
+
 		// Intro.
 			var $intro = $('#intro');
 
@@ -109,12 +127,6 @@
 					.on('-large', function() {
 						$intro.prependTo($sidebar);
 					});
-
-	 // Contact --- DEPRECATED ---
-	 		/*
-	 		var $contact = $('#contact')
-			$contact.html("<iframe scrolling='no' width='650' height='730' src='https://docs.google.com/forms/d/1Jo2gDGADb4pOO3gj0OVu6GYpFQVGIU0Y0QqOXeFSZR4/viewform?embedded=true'>Loading...</iframe>")
-			*/
 	});
 
 })(jQuery);
