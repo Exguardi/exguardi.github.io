@@ -2646,6 +2646,24 @@
 					white-space: nowrap;
 				}
 
+				.post > header .title > .image.featured {
+				  height: 341px;
+				  background: url(https://speck.tech/beta/images/about.jpg);
+				  background-size: cover;
+				}
+				.post > header .title > .image.featured h2 {
+					position: absolute;
+				  bottom: 10px;
+				  left: 10px;
+				  padding: 4px 8px;
+				  color: white;
+				  margin: 0;
+				  font: 42px Sans-Serif;
+					font-weight: 800;
+				  background: rgba(255, 255, 255, 0.75);
+				  color: black;
+				}
+
 		.post > .image.featured {
 			overflow: hidden;
 		}
