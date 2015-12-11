@@ -7,13 +7,13 @@ body{
   background: url(../img/diagmonds.png);
   background-repeat: repeat;
   color:#6C6662;
-  font:14px/20px 'PT Sans','Helvetica Neue','Arial','Helvetica',sans-serif; 
+  font:14px/20px 'PT Sans','Helvetica Neue','Arial','Helvetica',sans-serif;
 }
 .color{
   color:#3BC2C8;
 }
 .container {
-  
+
 }
 a{
   color:#3BC2C8;
@@ -114,12 +114,12 @@ ul.social > li {
 ul.social > li a {
   text-decoration: none;
   color:#747474;
-  -webkit-transition: color 1s linear;  
-  -moz-transition: color 1s linear;  
-  -o-transition: color 1s linear;  
-  -ms-transition: color 1s linear;  
+  -webkit-transition: color 1s linear;
+  -moz-transition: color 1s linear;
+  -o-transition: color 1s linear;
+  -ms-transition: color 1s linear;
   transition: color 1s linear;
-  cursor: pointer;  
+  cursor: pointer;
 }
 ul.social > li a:hover{
   color:#3BC2C8;
@@ -131,6 +131,19 @@ ul.social > li a:hover{
 .section {
     padding-bottom: 60px;
     padding-top: 60px;
+}
+.image featured titled {
+  margin: 10px;
+  width: 230px;
+  height: 150px;
+  float: left;
+  background: url(images/about.jpg);
+  background-size: cover;
+  position: relative;
+}
+.image featured titled h2 {
+  background: rgba(255, 255, 255, 0.75);
+  color: black;
 }
 /* Intro
 -------------------------------------------------- */
@@ -150,13 +163,13 @@ ul.social > li a:hover{
   font-size: 1.5em;
   font-weight: normal;
 }
-.intro hr{ 
+.intro hr{
   border: 0;
   height: 1px;
   background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-  background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-  background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-  background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+  background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+  background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+  background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
 }
 /* Metrocon
 -------------------------------------------------- */
@@ -229,7 +242,7 @@ ul.social > li a:hover{
 .mtcon .short-dec{
     margin-bottom: 10px;
     margin-left: 80px;
-    margin-top: 10px;   
+    margin-top: 10px;
 }
 
 /* Timeline
@@ -255,7 +268,7 @@ ul.social > li a:hover{
     margin-top: 20px;
     text-align: center;
     width: 46px;
-    margin-left: 85px;  
+    margin-left: 85px;
 }
 .timeline-head-content {
     background-color: #F5F5F5;
@@ -278,7 +291,7 @@ ul.social > li a:hover{
     margin-top: 31px;
     width: 85px;
     font-family: PT Sans;
-    font-size: 14px;    
+    font-size: 14px;
 }
 .timeline-item-trigger {
     background: none repeat scroll 0 0 #3BC2C8;
@@ -291,7 +304,7 @@ ul.social > li a:hover{
     line-height: 46px;
     margin-top: 20px;
     text-align: center;
-    width: 46px;  
+    width: 46px;
 }
 .timeline-item-content {
     background-color: #F5F5F5;
@@ -347,7 +360,7 @@ ul.social > li a:hover{
 .download h3{
   color: #363636;
   font-family: PT Sans;
-  font-weight: normal; 
+  font-weight: normal;
 }
 .download .btn-success {
     margin-top: -48px;
@@ -373,7 +386,7 @@ ul.social > li a:hover{
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
-} 
+}
 .skills h4 {
     line-height: 46px;
     text-align: left;
@@ -385,15 +398,15 @@ ul.social > li a:hover{
       margin-top:-54px;
       padding: 2px;
       float:right;
-      width: 78%;    
+      width: 78%;
       -moz-border-radius: 5px;
       -webkit-border-radius: 5px;
       border-radius: 5px;
       -moz-box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
       -webkit-box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
-      box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;           
+      box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
 }
-        
+
 .progress-bar span {
             display: inline-block;
             height: 100%;
@@ -408,10 +421,10 @@ ul.social > li a:hover{
       -moz-transition: width .4s ease-in-out;
       -ms-transition: width .4s ease-in-out;
       -o-transition: width .4s ease-in-out;
-      transition: width .4s ease-in-out;    
+      transition: width .4s ease-in-out;
 }
 .blue span {
-            background-color: #34c2e3;   
+            background-color: #34c2e3;
 }
 
 .orange span {
@@ -421,7 +434,7 @@ ul.social > li a:hover{
         background-image: -moz-linear-gradient(top, #fecf23, #fd9215);
         background-image: -ms-linear-gradient(top, #fecf23, #fd9215);
         background-image: -o-linear-gradient(top, #fecf23, #fd9215);
-} 
+}
 
 .green span {
         background-color: #a5df41;
@@ -430,12 +443,12 @@ ul.social > li a:hover{
         background-image: -moz-linear-gradient(top, #a5df41, #4ca916);
         background-image: -ms-linear-gradient(top, #a5df41, #4ca916);
         background-image: -o-linear-gradient(top, #a5df41, #4ca916);
-        background-image: linear-gradient(top, #a5df41, #4ca916);  
-}   
+        background-image: linear-gradient(top, #a5df41, #4ca916);
+}
 .stripes span {
             -webkit-background-size: 30px 30px;
             -moz-background-size: 30px 30px;
-            background-size: 30px 30px;     
+            background-size: 30px 30px;
       background-image: -webkit-gradient(linear, left top, right bottom,
                 color-stop(.25, rgba(255, 255, 255, .15)), color-stop(.25, transparent),
                 color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .15)),
@@ -455,24 +468,24 @@ ul.social > li a:hover{
                                 transparent 75%, transparent);
             background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
                                 transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
-                                transparent 75%, transparent);            
-            
+                                transparent 75%, transparent);
+
             -webkit-animation: animate-stripes 3s linear infinite;
-            -moz-animation: animate-stripes 3s linear infinite;           
+            -moz-animation: animate-stripes 3s linear infinite;
 }
-        
-@-webkit-keyframes animate-stripes { 
+
+@-webkit-keyframes animate-stripes {
       0% {background-position: 0 0;} 100% {background-position: 60px 0;}
 }
-        
-        
+
+
 @-moz-keyframes animate-stripes {
       0% {background-position: 0 0;} 100% {background-position: 60px 0;}
 }
 .shine span {
       position: relative;
 }
-    
+
 .shine span::after {
       content: '';
       opacity: 0;
@@ -484,18 +497,18 @@ ul.social > li a:hover{
       background: #fff;
             -moz-border-radius: 3px;
       -webkit-border-radius: 3px;
-      border-radius: 3px;     
-      
+      border-radius: 3px;
+
             -webkit-animation: animate-shine 2s ease-out infinite;
-            -moz-animation: animate-shine 2s ease-out infinite;       
+            -moz-animation: animate-shine 2s ease-out infinite;
 }
 
-@-webkit-keyframes animate-shine { 
+@-webkit-keyframes animate-shine {
       0% {opacity: 0; width: 0;}
       50% {opacity: .5;}
       100% {opacity: 0; width: 95%;}
 }
-        
+
 @-moz-keyframes animate-shine {
       0% {opacity: 0; width: 0;}
       50% {opacity: .5;}
@@ -505,20 +518,20 @@ ul.social > li a:hover{
             -moz-box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;
       -webkit-box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;
       box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;
-      
+
             -webkit-animation: animate-glow 1s ease-out infinite;
-            -moz-animation: animate-glow 1s ease-out infinite;      
+            -moz-animation: animate-glow 1s ease-out infinite;
 }
 
 @-webkit-keyframes animate-glow {
-     0% { -webkit-box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;} 
-     50% { -webkit-box-shadow: 0 5px 5px rgba(255, 255, 255, .3) inset, 0 -5px 5px rgba(255, 255, 255, .3) inset;} 
+     0% { -webkit-box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;}
+     50% { -webkit-box-shadow: 0 5px 5px rgba(255, 255, 255, .3) inset, 0 -5px 5px rgba(255, 255, 255, .3) inset;}
      100% { -webkit-box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;}
 }
 
 @-moz-keyframes animate-glow {
-     0% { -moz-box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;} 
-     50% { -moz-box-shadow: 0 5px 5px rgba(255, 255, 255, .3) inset, 0 -5px 5px rgba(255, 255, 255, .3) inset;} 
+     0% { -moz-box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;}
+     50% { -moz-box-shadow: 0 5px 5px rgba(255, 255, 255, .3) inset, 0 -5px 5px rgba(255, 255, 255, .3) inset;}
      100% { -moz-box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;}
 }
 
@@ -560,13 +573,13 @@ ul.social > li a:hover{
   margin-bottom: 60px;
 }
 
-.tringle { 
-  background:url(../img/tringle.png); 
+.tringle {
+  background:url(../img/tringle.png);
   width:20px;
-  height:13px; 
+  height:13px;
   position: absolute;
   bottom:0px;
-  left:15px; 
+  left:15px;
   z-index:999;
 }
 
@@ -599,7 +612,7 @@ ul.social > li a:hover{
    position: relative;
    text-align: center;
    cursor: default;
-   background:url('../img/spinner.gif') center center no-repeat #f1f1f1 !important; 
+   background:url('../img/spinner.gif') center center no-repeat #f1f1f1 !important;
 }
 .view .mask {
    width:100%;
@@ -616,7 +629,7 @@ ul.social > li a:hover{
    height:32px;
    border-radius:3px;
    background-color:#000;
-   background-image: url(../img/zoom.png); 
+   background-image: url(../img/zoom.png);
    position:absolute;
    top:50% !important;
    left:50%;
@@ -647,7 +660,7 @@ ul.social > li a:hover{
    height:32px;
    border-radius:3px;
    background-color:#000;
-   background-image: url(../img/link.png); 
+   background-image: url(../img/link.png);
    position:absolute;
    top:50% !important;
    left:50%;
@@ -699,41 +712,41 @@ ul.social > li a:hover{
 /* Isotop css
 -------------------------------------------------- */
 .isotope-item {
-    z-index: 2; 
+    z-index: 2;
  }
-.isotope-hidden.isotope-item { 
+.isotope-hidden.isotope-item {
     pointer-events: none;
-     z-index: 1; 
+     z-index: 1;
  }
 /* Isotope CSS3 transitions */
 .isotope, .isotope .isotope-item {
-     -webkit-transition-duration: 0.8s; 
-     -moz-transition-duration: 0.8s; 
+     -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
      -ms-transition-duration: 0.8s;
      -o-transition-duration: 0.8s;
      transition-duration: 0.8s;
-     display:block; 
+     display:block;
  }
-.isotope { 
-    -webkit-transition-property: height, width; 
-    -moz-transition-property: height, width; 
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
     -ms-transition-property: height, width;
      -o-transition-property: height, width;
-     transition-property: height, width; 
+     transition-property: height, width;
  }
-.isotope .isotope-item { 
-    -webkit-transition-property: -webkit-transform, opacity; 
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
     -moz-transition-property: -moz-transform, opacity;
      -ms-transition-property: -moz-transform, opacity;
-     -o-transition-property: top, left, opacity; 
+     -o-transition-property: top, left, opacity;
      transition-property: transform, opacity;
  }
 /* disabling Isotope CSS3 transitions */
-.isotope.no-transition, .isotope.no-transition .isotope-item, .isotope .isotope-item.no-transition { 
+.isotope.no-transition, .isotope.no-transition .isotope-item, .isotope .isotope-item.no-transition {
     -webkit-transition-duration: 0s;
-     -moz-transition-duration: 0s; 
-     -ms-transition-duration: 0s; 
-     -o-transition-duration: 0s; 
+     -moz-transition-duration: 0s;
+     -ms-transition-duration: 0s;
+     -o-transition-duration: 0s;
      transition-duration: 0s;
  }
 
@@ -757,31 +770,31 @@ ul.social > li a:hover{
 .meta hr{
   margin: 10px;
  }
-.meta span { 
+.meta span {
   font-size:12px;
-  line-height:16px; 
+  line-height:16px;
   display:block;
   font-family: PT Sans;
   color:#c5c5c5;
 }
-.meta_date { 
+.meta_date {
   float:left;
 }
-.meta_comment { 
+.meta_comment {
   float:right;
 }
-.quote { 
+.quote {
   padding:24px;
   background:#333;
   text-align:left;
 }
 .quote blockquote p {
-  font-family:"georgia"; 
-  color: #FFFFFF; 
+  font-family:"georgia";
+  color: #FFFFFF;
   text-transform:none !important;
   font-size:12px;
-  font-style: italic; 
-  border:none; 
+  font-style: italic;
+  border:none;
   line-height:18px;
   margin-bottom:0px;
  }
@@ -816,9 +829,9 @@ ul.info li span{
   font-family: PT Sans;
   font-size: 16px;
 }
-#note { 
+#note {
   color:#ff0000;
-  font-size:11px; 
+  font-size:11px;
   line-height:14px;
   margin-bottom:15px;
   font-family: PT Sans;
@@ -850,7 +863,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
     outline: 0 none;
 }
 .btn{
-  border-color: transparent; 
+  border-color: transparent;
 }
 .btn-success {
     font-size: 16px;
@@ -976,7 +989,7 @@ footer{
 		.progress-bar{
 			margin:0 auto;
 			float: none;
-		}		  
+		}
           .block{
             margin-left: 140px;
           }
@@ -991,7 +1004,7 @@ footer{
     }
     .download h3{
       font-size: 23px;
-    }           
+    }
 }
 @media(max-width: 768px) {
 
@@ -1000,27 +1013,27 @@ footer{
         section {
           margin-left: -20px;
           margin-right: -20px;
-        }   
+        }
         .sidebar{
           position: relative;
           background: transparent;
           border-radius: 0px 0px 0px 0px;
           box-shadow: 0px 0px rgba(0, 0, 0, 0.05);
-          height: 80px;          
-        } 
+          height: 80px;
+        }
         .social-list{
           margin-top: 40px;
         }
         ul.social{
           border-bottom:0px;
-          border-top:0px;  
+          border-top:0px;
         }
         .nav-collapse ul {
           display: none;
-        } 
+        }
         .nav-collapse select{
           display: block;
-          margin: 0 auto; 
+          margin: 0 auto;
         }
         .mtcon .short-dec{
           margin-left: 0px;
@@ -1076,7 +1089,7 @@ footer{
         }
         ul.info{
           margin-left: 0px;
-        }  
+        }
     .download{
       width: 236px;
       padding: 24px 30px;
@@ -1087,8 +1100,8 @@ footer{
     .download .btn-success {
         float: none;
         margin-left: 62px;
-        margin-top:0px; 
-    } 
+        margin-top:0px;
+    }
 }
 @media(max-width: 320px) {
       .timeline{
@@ -1134,5 +1147,5 @@ footer{
       }
       ul.info{
         margin-left: 0px;
-      }  
+      }
 }
