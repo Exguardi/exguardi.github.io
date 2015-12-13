@@ -98,8 +98,8 @@
 					}, 100);
 				});
 
-				// custom tipue site search integration
-				$('#tipue_search_input').tipuesearch();
+				// custom tipue site search integration --- DEPRECATED ---
+				/*$('#tipue_search_input').tipuesearch();*/
 
 		// Nav (Header)
 			$header = $('header');
