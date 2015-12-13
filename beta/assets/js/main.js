@@ -98,6 +98,9 @@
 					}, 100);
 				});
 
+				// custom tipue site search integration
+				$('#tipue_search_input').tipuesearch();
+
 		// Nav (Header)
 			$header = $('header');
 			var pathname = document.location.href;
