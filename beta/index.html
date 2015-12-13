@@ -13,11 +13,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<script type="text/javascript" src="tipuesearch/tipuesearch_set.js"></script>
-		<script type="text/javascript" src="tipuesearch/tipuesearch_content.js"></script>
-		<script type="text/javascript" src="tipuesearch/tipuesearch.min.js"></script>
 	</head>
 	<body>
 
@@ -56,10 +54,10 @@
 
 						<!-- Search -->
 							<section>
-								<form class="search" action="search.html">
+								<form id="search" action="search.html">
 									<!--<input type="text" name="query" placeholder="Search" />-->
 									<!--<form action="search.html">-->
-									<input type="text" name="q" id="tipue_search_input" placeholder="Search" autocomplete="on" required>
+									<input type="text" name="q" id="tipue_search_input" placeholder="Search" autocomplete="off" required>
 								</form>
 								<!--<div id="tipue_search_content"></div>-->
 							</section>
