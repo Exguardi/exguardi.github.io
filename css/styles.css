@@ -555,8 +555,8 @@ ul.social > li a:hover{
     color:#E41212;
 }
 #portfolioitems{
-  width: 87%;
-  margin-left: auto;
+  width: 100%;
+  margin-left: 75px;/*auto;*/
   margin-right: auto;
   margin-bottom: 60px;
 }
@@ -622,7 +622,7 @@ ul.social > li a:hover{
    top:50% !important;
    left:50%;
    margin-top:-16px;
-   margin-left:-36px;
+   margin-left:-16px;
    border:1px solid;
    border-color: rgba(0,0,0, 0.5);
    -webkit-transition: all 0.2s linear;
