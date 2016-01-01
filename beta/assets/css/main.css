@@ -1408,7 +1408,7 @@
 	}
 
 	body {
-		background: #fff;/*#f4f4f4;*/
+		background: #f6fbfc;/*#f4f4f4;*/
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -3276,14 +3276,14 @@
 		overflow: hidden;
 		position: relative;
 		width: 100%;/*18em;*/
-		background-color: #f9f9f9;/*#b5ffff;*/
+		/*background-color: #b5ffff;*/
 	}
 
-		#intro .logo:before {
-			/*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100px' height='100px' viewBox='0 0 100 100' preserveAspectRatio='none' zoomAndPan='disable'%3E%3Cpolygon points='0,0 100,0 100,25 50,0 0,25' style='fill:%23f4f4f4' /%3E%3Cpolygon points='0,100 100,100 100,75 50,100 0,75' style='fill:%23f4f4f4' /%3E%3C/svg%3E");
+		/*#intro .logo:before {
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100px' height='100px' viewBox='0 0 100 100' preserveAspectRatio='none' zoomAndPan='disable'%3E%3Cpolygon points='0,0 100,0 100,25 50,0 0,25' style='fill:%23f4f4f4' /%3E%3Cpolygon points='0,100 100,100 100,75 50,100 0,75' style='fill:%23f4f4f4' /%3E%3C/svg%3E");
 			background-position: top left;
 			background-repeat: no-repeat;
-			background-size: 100% 100%;*/
+			background-size: 100% 100%;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3291,12 +3291,14 @@
 			position: absolute;
 			top: 0;
 			width: 100%;
-		}
+		}*/
 
 		#intro .logo img {
 			display: block;
 			margin-left: -0.25em;
-			width: 18em;
+			height:100%;
+			width:100%;
+			/*width: 18em;*/
 		}
 
 	#intro header h2 {
