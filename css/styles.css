@@ -356,7 +356,8 @@ ul.social > li a:hover{
 /* Service
 -------------------------------------------------- */
 .service{
-  margin-left: 44px;
+  /*margin-left: 44px;*/
+  margin-left: 160px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -887,6 +888,11 @@ footer{
 /***************************
 ******** Responsive css
 /***************************/
+@media(max-width: 1200px) {
+  .service{
+    margin-left: 80px;
+  }
+}
 @media(max-width: 980px) {
           .mtcon {
               background: #FFFFFF;
@@ -915,6 +921,9 @@ footer{
           }
           .timeline-item-content{
             width: 440px;
+          }
+          .service{
+            margin-left: 140px;
           }
 
           }
@@ -968,9 +977,9 @@ footer{
             left: 267px;
             top: 61px;
           }
-          .service{
+          /*.service{
             margin-left: 140px;
-          }
+          }*/
 		.skills h4{
 			text-align:center;
 		}
@@ -1059,9 +1068,9 @@ footer{
           left: 169px;
           top: 61px;
         }
-        .service{
+        /*.service{
           margin-left: 52px;
-        }
+        }*/
 		.skills h4{
 			text-align:center;
 		}
@@ -1124,9 +1133,9 @@ footer{
         left: 149px;
         top: 61px;
       }
-      .service{
+      /*.service{
         margin-left: 30px;
-      }
+      }*/
       .block{
         margin-left: 16px;
       }
