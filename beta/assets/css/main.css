@@ -2157,6 +2157,10 @@
 				width: 100%;
 			}
 
+			@media screen and (max-width: 980px) {
+				/**/
+			}
+
 			@media screen and (max-width: 736px) {
 
 				.image.featured {
@@ -3336,6 +3340,7 @@
 
 		#intro .logo img {
 			margin: 0 auto 0 auto;
+			width:50%;
 		}
 
 			#intro header h2 {
