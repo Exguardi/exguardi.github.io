@@ -2201,6 +2201,23 @@
 			padding-left: 0.5em;
 		}
 
+		ul.custom {
+	    list-style: none;
+	    margin-left: 0;
+	    padding-left: 0;
+		}
+
+		ul.custom li {
+		    padding-left: 1em;
+		    text-indent: -1em;
+		}
+
+		ul.custom li:before {
+		    content: "::";
+		    padding-right: 5px;
+				font-style: italic;
+		}
+
 		ul.alt {
 			list-style: none;
 			padding-left: 0;
