@@ -2685,7 +2685,7 @@
 
 				/*.post > header .title > .image.featured {
 				  height: 341px;
-				  background: url(https://speck.tech/beta/images/about.jpg);
+				  background: url(../beta/images/about.jpg);
 				  background-size: cover;
 				}
 				.post > header .title > .image.featured h2 {
