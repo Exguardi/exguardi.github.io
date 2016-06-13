@@ -8,7 +8,7 @@ http://www.tipue.com/search
 
 // List of pages for Live mode
 
-var tipuesearch_pages = ["../beta/", "../beta/about.html"/*, "../beta/work.html""https://speck.tech/betawork.html.html"*/, "../beta/resume.html", "../beta/reviews.html", "../beta/contact.html"];
+var tipuesearch_pages = ["../beta/", "../beta/about.html"/*, "../beta/work.html""../beta/work.html"*/, "../beta/resume.html", "../beta/reviews.html", "../beta/contact.html"];
 
 /*
 Stop words
