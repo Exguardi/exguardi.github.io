@@ -148,3 +148,20 @@
 	});
 
 })(jQuery);
+
+/* CUSTOM BOX RESIZING FOR SAFARI */
+function safariBoxes(){
+	if($(window).width() > 980){
+		$('.badges.box').each(function(){
+			var newHeight = $(this).parents('.meta').siblings('.title').height();
+			console.log(newHeight);
+			$(this).css('height', newHeight);
+		});
+	}
+}
+$(window).resize(function(){
+	safariBoxes();
+})
+$(document).ready(function(){
+	safariBoxes();
+});

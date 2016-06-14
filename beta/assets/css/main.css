@@ -1694,6 +1694,12 @@
 		}
 
 		/* CUSTOM */
+
+		.badges.box.alt .image.fit img{
+  max-width:200px;
+  margin:0 auto;
+}
+
 				article.post > header .meta{
 		  display:block;
 		}
