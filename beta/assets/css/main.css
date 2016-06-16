@@ -2365,6 +2365,11 @@
 					content: '\f053';
 				}
 
+				/* ENFORCE MIN WIDTH AT ALL RESOLUTIONS */
+				ul.actions.pagination .next, ul.actions.pagination .previous {
+					min-width: 20em;
+				}
+
 			@media screen and (max-width: 1280px) {
 
 				ul.actions.pagination {

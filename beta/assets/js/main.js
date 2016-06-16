@@ -112,7 +112,8 @@
 			if(pathname!=null) { // make sure we don't execute this on null path
 				// Highlight link for current page
 				if(pathname!="https://speck.tech/beta" || pathname.indexOf('file://') > -1) {
-					pathname = document.location.href.split("/").slice(-1);
+					pathname = pathname.split("/").slice(-1).toString();
+					pathname = pathname.replace(/-.*\./, '.'); // remove all characters after a - and before . so our subpages work
 					if(pathname!="") { // disregard site root
 						var failures = 0;
 						var $links = $header.find('ul').first().find('li a');
