@@ -114,6 +114,7 @@
 				if(pathname!="https://speck.tech/beta" || pathname.indexOf('file://') > -1) {
 					pathname = pathname.split("/").slice(-1).toString();
 					pathname = pathname.replace(/-.*\./, '.'); // remove all characters after a - and before . so our subpages work
+					console.log(pathname);
 					if(pathname!="") { // disregard site root
 						var failures = 0;
 						var $links = $header.find('ul').first().find('li a');
