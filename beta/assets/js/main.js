@@ -115,7 +115,6 @@
 					pathname = pathname.split("/").slice(-1).toString();
 					pathname = pathname.replace(/-.*\./, '.'); // remove all characters after a - and before . so our subpages work
 					pathname = pathname.split("#")[0]; // remove # and everything after it if it exists
-					console.log(pathname);
 					if(pathname!="") { // disregard site root
 						var failures = 0;
 						var $links = $header.find('ul').first().find('li a');
