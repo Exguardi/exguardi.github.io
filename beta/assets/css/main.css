@@ -2764,7 +2764,7 @@
 
 				/*.post > header .title > .image.featured {
 				  height: 341px;
-				  background: url(../beta/images/about.jpg);
+				  background: url(/images/about.jpg);
 				  background-size: cover;
 				}
 				.post > header .title > .image.featured h2 {

@@ -111,7 +111,7 @@
 			var pathname = document.location.href;
 			if(pathname!=null) { // make sure we don't execute this on null path
 				// Highlight link for current page
-				if(pathname!="https://speck.tech/beta" || pathname.indexOf('file://') > -1) {
+				if(pathname!="/" || pathname.indexOf('file://') > -1) {
 					pathname = pathname.split("/").slice(-1).toString();
 					pathname = pathname.replace(/-.*\./, '.'); // remove all characters after a - and before . so our subpages work
 					pathname = pathname.split("#")[0]; // remove # and everything after it if it exists
