@@ -1,621 +1,635 @@
-<!-- Hey! This is my website source code! -->
+<!DOCTYPE HTML>
+<!--
+	MODIFIED BY: Robert Speck | speck.tech
 
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html class="not-ie" lang="en">
-<!--<![endif]-->
-<head>
-<meta charset="utf-8">
-<meta name="description" content="Bobby Speck's Portfolio" />
-<meta name="keywords" content="Bobby Speck's Portfolio"/>
-<meta name="author" content="Bobby Speck" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<title>App Dev & Technology | speck.tech</title>
-<!--Fav and touch icons-->
-<link rel="shortcut icon" href="img/icons/favicon.ico">
-<link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png">
-<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-<!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<!--style sheet-->
-<link rel="stylesheet" media="screen" href="css/bootstrap.css"/>
-<link rel="stylesheet" media="screen" href="css/styles.css"/>
-<link rel="stylesheet" href="css/bebasneue.css" />
-<!--google web font-->
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic">
-<link href="font-awesome/css/font-awesome.css" rel="stylesheet"/>
-<link rel="stylesheet" href="css/flexslider.css">
-<link rel="stylesheet" href="css/object-carousel.css"/>
-<link rel="stylesheet" href="css/prettyPhoto.css"/>
-<link rel="stylesheet" href="css/jquery.tweet.css" />
-<link rel="stylesheet" href="css/bg_default.css" />
+	WEBSITE BASE: Future Imperfect by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>App Dev & Technology | speck.tech</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
 
-<!--JavaScript-->
-<script src="js/jquery-1.8.1.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/scripts.js"></script>
-<script src="js/modernizr.js"></script>
-<script src="js/jquery.prettyPhoto.js"></script>
-<script src="js/main."></script>
-<script src="js/jquery.isotope.min.js"></script>
-<script src="js/jquery.preloader.js"></script>
-<!--<script src="js/jquery.gmap.js"></script>
-<script src="http://maps.google.com/maps/api/js?sensor=false"></script>-->
-<script type="text/javascript">
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-34830156-1']);
-  _gaq.push(['_setDomainName', 'project.pawthemes.com']);
-  _gaq.push(['_trackPageview']);
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="/">speck.tech</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="about.html">About</a></li>
+								<li><a href="work.html">Portfolio</a></li><!--work.html-->
+								<li><a href="resume.html">Resume</a></li>
+								<!--<li><a href="reviews.html">Reviews</a></li>-->
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li><a href="https://www.linkedin.com/in/bobbyspeck" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="mailto:contact@mg.speck.tech?subject=Inquiry for speck.tech" class="fa-envelope"><span class="label">Email</span></a></li>
+								<!--<li class="search">
+									<a class="fa-search" href="search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>-->
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+				<!-- Menu -->
+					<section id="menu">
 
-</script>
-</head>
-<body data-spy="scroll" data-offset="61" data-target=".nav-collapse">
+						<!-- Search -->
+							<!--<section>
+								<form action="search.html">
+									<!--<input type="text" name="query" placeholder="Search" />->
+									<!--<form action="search.html">->
+									<input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+								</form>
+								<!--<div id="tipue_search_content"></div>->
+							</section>-->
 
-<!-- Main Container -->
-<div class="container">
-	<div class="row">
-		<!-- Sidebar -->
-		<div class="span3 sidebar">
-			<!-- nav -->
-			<nav id="nav">
-				<!-- logo -->
-				<div class="logo">
-					<h2>Bobby Speck<span>apps, games, dev</span></h2>
-				</div>
-				<!-- /logo end -->
-				<!-- mainnav -->
-				<div class="nav-collapse">
-						<ul class="nav">
-							<li><a href="#intro"><i class="icon-fire"><span>Intro</span></i></a></li>
-							<li><a href="#portfolio"><i class="icon-suitcase"><span>Portfolio</span></i></a></li>
-							<li><a href="#resume"><i class="icon-book"><span>Resume</span></i></a></li>
-							<!--<li><a href="#blog"><i class="icon-pencil"><span>Blog</span></i></a></li>-->
-							<li><a href="#contact"><i class="icon-envelope-alt"><span>Contact</span></i></a></li>
-						</ul>
-				</div>
-				<!-- /mainnav end -->
-			</nav>
-			<!-- /nav -->
-			<!-- social link -->
-			<div class="social-list">
-				<ul class="social">
-          <li><a href="mailto:contact@mg.speck.tech"><i class="icon-envelope"></i></a></li>
-					<li><a href="https://www.linkedin.com/pub/robert-speck/21/44b/6a9"><i class="icon-linkedin"></i></a></li>
-					<!--<li><a href="https://twitter.com/Exguardi"><i class="icon-twitter"></i></a></li>
-					<li><a href="https://www.facebook.com/bobby.speck"><i class="icon-facebook"></i></a></li>
-					<li><a href="https://plus.google.com/110629306882811311908/posts/p/pub"><i class="icon-google-plus"></i></a></li>
-					<li><a href="#"><i class="icon-github"></i></a></li>-->
-				</ul>
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="about.html">
+											<h3>ABOUT</h3>
+											<p>About me</p>
+										</a>
+									</li>
+									<li>
+										<a href="work.html">
+											<h3>PORTFOLIO</h3>
+											<p>A collection of my work</p>
+										</a>
+									</li>
+									<li>
+										<a href="resume.html">
+											<h3>RESUME</h3>
+											<p>Resume and projects information</p>
+										</a>
+									</li>
+									<!--<li>
+										<a href="reviews.html">
+											<h3>REVIEWS</h3>
+											<p>Reviews and technology writing</p>
+										</a>
+									</li>-->
+									<li>
+										<a href="contact.html">
+											<h3>CONTACT</h3>
+											<p>Get in touch for hiring and other inquiries</p>
+										</a>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Actions -->
+							<section>
+								<ul class="actions vertical">
+									<!--<li><a href="#" class="button big fit">Log In</a></li>-->
+								</ul>
+							</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+						<article class="post">
+							<header id="jbvr">
+								<div class="title">
+									<h2><a href="work-jbvr.html#jbvr">The Jungle Book: Kaa's Jungle VR</a></h2>
+									<p>See "Through Mowgli's Eyes" in this Virtual Reality promotional experience.</p>
+								</div>
+								<div class="meta">
+									<!--<time class="published" datetime="2015">2015</time>
+									<a href="#" class="author"><span class="name">speck.tech</span><img src="images/avatar.jpg" alt="" /></a>-->
+									<div class="box badges alt">
+										<a target="_blank" href="https://www.youtube.com/watch?v=G1cVbfyFdf0"><span class="image fit"><img src="images/youtube_logo.png" alt="View on Youtube" /></span></a>
+									</div>
+								</div>
+							</header>
+							<a class="image featured" href="work-jbvr.html#jbvr"><img src="images/jbvr_banner.jpg" alt="" /></a>
+							<p>Are you brave enough to trussssst her? See Kaa’s Jungle Through Mowgli’s Eyes, a 360 Experience.</p>
+							<footer>
+								<ul class="actions">
+									<li><a href="work-jbvr.html#jbvr" class="button big">Continue Reading</a></li>
+								</ul>
+								<ul class="stats">
+									<li><a href="work.html">Featured Work</a></li>
+									<!--<li><a href="#" class="icon fa-heart">28</a></li>
+									<li><a href="#" class="icon fa-comment">128</a></li>-->
+								</ul>
+							</footer>
+						</article>
+
+						<!-- Post -->
+						<!--	<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">TITLE</a></h2>
+										<p>DESCRIPTION</p>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2015">2015</time>
+										<a href="#" class="author"><span class="name">speck.tech</span><img src="images/avatar.jpg" alt="" /></a>
+									</div>
+								</header>
+								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+								<p>BODY</p>
+								<footer>
+									<ul class="actions">
+										<li><a href="#" class="button big">Continue Reading</a></li>
+									</ul>
+									<ul class="stats">
+										<li><a href="#">CATEGORY</a></li>
+										<!--<li><a href="#" class="icon fa-heart">28</a></li>
+										<li><a href="#" class="icon fa-comment">128</a></li>->
+									</ul>
+								</footer>
+							</article>-->
+
+						<!-- Post -->
+						<!--
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">Elements</a></h2>
+										<p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2015-10-18">October 18, 2015</time>
+										<a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
+									</div>
+								</header>
+
+								<section>
+									<h3>Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+  print 'Iteration ' + i;
+  deck.shuffle();
+  i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3>Lists</h3>
+									<div class="row">
+										<div class="6u 12u$(medium)">
+											<h4>Unordered</h4>
+											<ul>
+												<li>Dolor pulvinar etiam.</li>
+												<li>Sagittis adipiscing.</li>
+												<li>Felis enim feugiat.</li>
+											</ul>
+											<h4>Alternate</h4>
+											<ul class="alt">
+												<li>Dolor pulvinar etiam.</li>
+												<li>Sagittis adipiscing.</li>
+												<li>Felis enim feugiat.</li>
+											</ul>
+										</div>
+										<div class="6u$ 12u$(medium)">
+											<h4>Ordered</h4>
+											<ol>
+												<li>Dolor pulvinar etiam.</li>
+												<li>Etiam vel felis viverra.</li>
+												<li>Felis enim feugiat.</li>
+												<li>Dolor pulvinar etiam.</li>
+												<li>Etiam vel felis lorem.</li>
+												<li>Felis enim et feugiat.</li>
+											</ol>
+											<h4>Icons</h4>
+											<ul class="icons">
+												<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+											</ul>
+										</div>
+									</div>
+									<h3>Actions</h3>
+									<div class="row">
+										<div class="6u 12u$(medium)">
+											<ul class="actions">
+												<li><a href="#" class="button">Default</a></li>
+												<li><a href="#" class="button">Default</a></li>
+												<li><a href="#" class="button">Default</a></li>
+											</ul>
+											<ul class="actions small">
+												<li><a href="#" class="button small">Small</a></li>
+												<li><a href="#" class="button small">Small</a></li>
+												<li><a href="#" class="button small">Small</a></li>
+											</ul>
+											<ul class="actions vertical">
+												<li><a href="#" class="button">Default</a></li>
+												<li><a href="#" class="button">Default</a></li>
+												<li><a href="#" class="button">Default</a></li>
+											</ul>
+											<ul class="actions vertical small">
+												<li><a href="#" class="button small">Small</a></li>
+												<li><a href="#" class="button small">Small</a></li>
+												<li><a href="#" class="button small">Small</a></li>
+											</ul>
+										</div>
+										<div class="6u 12u$(medium)">
+											<ul class="actions vertical">
+												<li><a href="#" class="button fit">Default</a></li>
+												<li><a href="#" class="button fit">Default</a></li>
+											</ul>
+											<ul class="actions vertical small">
+												<li><a href="#" class="button small fit">Small</a></li>
+												<li><a href="#" class="button small fit">Small</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+
+								<section>
+									<h3>Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3>Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button big">Big</a></li>
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions fit">
+										<li><a href="#" class="button fit">Fit</a></li>
+										<li><a href="#" class="button fit">Fit</a></li>
+										<li><a href="#" class="button fit">Fit</a></li>
+									</ul>
+									<ul class="actions fit small">
+										<li><a href="#" class="button fit small">Fit + Small</a></li>
+										<li><a href="#" class="button fit small">Fit + Small</a></li>
+										<li><a href="#" class="button fit small">Fit + Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button icon fa-download">Icon</a></li>
+										<li><a href="#" class="button icon fa-upload">Icon</a></li>
+										<li><a href="#" class="button icon fa-save">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button disabled">Disabled</span></li>
+										<li><span class="button disabled icon fa-download">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3>Form</h3>
+									<form method="post" action="#">
+										<div class="row uniform">
+											<div class="6u 12u$(xsmall)">
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+											</div>
+											<div class="6u$ 12u$(xsmall)">
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+											</div>
+											<div class="12u$">
+												<div class="select-wrapper">
+													<select name="demo-category" id="demo-category">
+														<option value="">- Category -</option>
+														<option value="1">Manufacturing</option>
+														<option value="1">Shipping</option>
+														<option value="1">Administration</option>
+														<option value="1">Human Resources</option>
+													</select>
+												</div>
+											</div>
+											<div class="4u 12u$(small)">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="4u 12u$(small)">
+												<input type="radio" id="demo-priority-normal" name="demo-priority">
+												<label for="demo-priority-normal">Normal</label>
+											</div>
+											<div class="4u$ 12u$(small)">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="6u 12u$(small)">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="6u$ 12u$(small)">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="12u$">
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+											<div class="12u$">
+												<ul class="actions">
+													<li><input type="submit" value="Send Message" /></li>
+													<li><input type="reset" value="Reset" /></li>
+												</ul>
+											</div>
+										</div>
+									</form>
+								</section>
+
+								<section>
+									<h3>Image</h3>
+									<h4>Fit</h4>
+									<div class="box alt">
+										<div class="row uniform">
+											<div class="12u$"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
+											<div class="4u$"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+											<div class="4u$"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
+											<div class="4u$"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+										</div>
+									</div>
+									<h4>Left &amp; Right</h4>
+									<p><span class="image left"><img src="images/pic07.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+									<p><span class="image right"><img src="images/pic04.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+								</section>
+
+							</article>
+						-->
+
+						<!-- Pagination -->
+							<ul class="actions pagination">
+								<li><a href="contact.html" class="button big previous">Contact</a></li>
+								<li><a href="about.html" class="button big next">About</a></li>
+							</ul>
+
+					</div>
+
+				<!-- Sidebar -->
+					<section id="sidebar">
+
+						<!-- Intro -->
+							<section id="intro">
+								<a href="/" class="logo"><img src="images/logo.jpg" alt="" /></a>
+								<header>
+									<h2><a href="/">speck.tech</a></h2>
+									<p>Hi, I'm Bobby Speck. I build mobile apps and websites. <a href="mailto:contact@mg.speck.tech?subject=Inquiry for speck.tech">Get in touch</a> with a project inquiry today!</p>
+									<!--<p><a href="about.html">About</a>, <a href="work.html">Portfolio</a>, <a href="resume.html">Resume</a>, <a href="reviews.html">Reviews</a>, and <a href="contact.html">Contact</a> for Bobby Speck</a></p>-->
+								</header>
+							</section>
+
+						<!-- Mini Posts -->
+							<section>
+								<div class="mini-posts">
+
+									<!-- Mini Post -->
+									<article class="mini-post">
+											<header>
+												<h3><a href="work-drawsta.html#drawsta">Drawsta: Augmented Reality Tees</a></h3>
+												<a href="work-drawsta.html#drawsta" class="author"><img src="images/logos/drawsta-ios-logo-500px.png" alt="" /></a>
+											</header>
+											<a href="work-drawsta.html#drawsta" class="image"><img src="images/drawsta_banner.jpg" alt="" /></a>
+										</article>
+
+									<!-- Mini Post -->
+									<article class="mini-post">
+											<header>
+												<h3><a href="work-kttc.html#kttc">Keys to the Collection: Educational iOS Game</a></h3>
+												<a href="work-kttc.html#kttc" class="author"><img src="images/logos/kttc-ios-logo-500px.png" alt="" /></a>
+											</header>
+											<a href="work-kttc.html#kttc" class="image"><img src="images/kttc_banner.jpg" alt="" /></a>
+										</article>
+
+									<!-- Mini Post ->
+										<article class="mini-post">
+											<header>
+												<h3><a href="#">Odio congue mattis</a></h3>
+												<time class="published" datetime="2015-10-18">October 18, 2015</time>
+												<a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>
+											</header>
+											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+										</article>
+
+									<!-- Mini Post ->
+										<article class="mini-post">
+											<header>
+												<h3><a href="#">Enim nisl veroeros</a></h3>
+												<time class="published" datetime="2015-10-17">October 17, 2015</time>
+												<a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>
+											</header>
+											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+										</article>-->
+
+								</div>
+							</section>
+
+						<!-- Posts List -->
+							<!--<section>
+								<ul class="posts">
+									<li>
+										<article>
+											<header>
+												<h3><a href="about.html">speck.tech site launch</a></h3>
+											</header>
+											<a href="about.html" class="image"><img src="images/avatar_large.jpg" alt="" /></a>
+										</article>
+									</li>
+								</ul>
+									<!--<li>
+										<article>
+											<header>
+												<h3><a href="#">Convallis maximus nisl mattis nunc id lorem</a></h3>
+												<time class="published" datetime="2015-10-15">October 15, 2015</time>
+											</header>
+											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+										</article>
+									</li>
+									<li>
+										<article>
+											<header>
+												<h3><a href="#">Euismod amet placerat vivamus porttitor</a></h3>
+												<time class="published" datetime="2015-10-10">October 10, 2015</time>
+											</header>
+											<a href="#" class="image"><img src="images/pic10.jpg" alt="" /></a>
+										</article>
+									</li>
+									<li>
+										<article>
+											<header>
+												<h3><a href="#">Magna enim accumsan tortor cursus ultricies</a></h3>
+												<time class="published" datetime="2015-10-08">October 8, 2015</time>
+											</header>
+											<a href="#" class="image"><img src="images/pic11.jpg" alt="" /></a>
+										</article>
+									</li>
+									<li>
+										<article>
+											<header>
+												<h3><a href="#">Congue ullam corper lorem ipsum dolor</a></h3>
+												<time class="published" datetime="2015-10-06">October 7, 2015</time>
+											</header>
+											<a href="#" class="image"><img src="images/pic12.jpg" alt="" /></a>
+										</article>
+									</li>
+								</ul>
+							</section>-->
+
+						<!-- About -->
+							<section class="blurb">
+								<h2>About</h2>
+								<a href="about.html" class="image"><img src="images/avatar_large.jpg" alt="" /></a>
+								<ul class="actions">
+									<li><a href="about.html" class="button">Learn More</a></li>
+								</ul>
+							</section>
+
+						<!-- Footer -->
+							<section id="footer">
+								<!--<ul class="icons">
+									<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="fa-rss"><span class="label">RSS</span></a></li>
+									<li><a href="mailto:contact@mg.speck.tech?subject=Inquiry for speck.tech" class="fa-envelope"><span class="label">Email</span></a></li>
+								</ul>-->
+								<p class="copyright">&copy; Bobby Speck. Based on <a href="http://html5up.net/future-imperfect">Future Imperfect</a> from <a href="http://html5up.net">HTML5 UP</a></p>
+							</section>
+
+					</section>
+
 			</div>
-			<!-- /social link end -->
-		</div>
-		<!-- Sidebar -->
-		<!-- Content Section -->
-		<div class="span9 content offset3">
-			<!-- Intro -->
-			<section id="intro" class="section intro">
-				<div class="row">
-					<div class="span8">
-						<img class="img-circle" src="img/avatar/me.jpg" alt=""/>
-						<h2>Bobby Speck</h2>
-						<hr>
-						<h3>I build mobile apps and websites. Check out current and prior work below, or get in touch with a project inquiry.
-						</h3>
-						<hr>
-					</div>
-				</div>
-			</section>
-			<!-- /Intro end -->
 
-			<!-- Works -->
-			<section id="portfolio" class="section mtcon">
-				<!-- heading -->
-				<div class="row">
-					<h2 class="mtcon-title">Portfolio</h2>
-				</div>
-				<!-- /heading -->
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
 
-				<div class="row service">
-					<div class="box">
-						<img src="img/services/3.png" alt="">
-						<h3>App Development</h3>
-						<p>Unity, Xcode; C#, CSS, JavaScript, HTML, ObjectiveC.</p>
-					</div>
-					<div class="box">
-						<img src="img/services/4.png" alt="">
-						<h3>Web Design</h3>
-						<p>Modern, beautiful, responsive web design.</p>
-					</div>
-					<!--<div class="box">
-						<img src="img/services/1.png" alt="">
-						<h3>Animation/VFX</h3>
-						<p>Applying development techniques to artistic creations. From real-time to render time.</p>
-					</div>-->
-				</div>
-
-				<!-- Portfolio -->
-				<div class="row">
-					<!-- #options --
-	                <div id="options" class="clearfix">
-	                    <ul id="filters" class="option-set clearfix" data-option-key="filter">
-	                        <li><a href="#filter" data-option-value="*" class="selected">show all</a></li>
-							<li><a href="#filter" data-option-value=".apps">apps</a></li>
-							<li><a href="#filter" data-option-value=".games">games</a></li>
-							<li><a href="#filter" data-option-value=".web">web</a></li>
-							<li><a href="#filter" data-option-value=".computergraphics">computer graphics</a></li>
-	                    </ul>
-	                </div>
-	                <!-- #options end-->
-	                <!-- portfolio items -->
-	                <div id="portfolioitems" class="clearfix">
-
-						<div class="block games">
-							<div class="view view-first">
-								<div class="tringle"></div>
-								<img src="img/work/1/5.jpg" alt="">
-								<div class="mask">
-									<a class="info" data-rel="prettyPhoto" title="Keys to the Collection" href="http://vimeo.com/93657213"></a>
-									<!--<a class="link" href="#"></a>-->
-								</div>
-							</div>
-							<div class="des">
-                                <h4>Keys to the Collection</h4>
-                                <p>An educational iOS game in partnership with the <a href="http://www.barnesfoundation.org/" target="_blank">Barnes Foundation</a>. <a href="https://itunes.apple.com/us/app/keys-to-the-collection/id874961428?mt=8" target="_blank">Now released!</a> Learn more <a href="http://drexel.edu/now/archive/2014/August/Barnes-App/" target="_blank">here</a> and <a href="http://technical.ly/philly/2014/10/02/barnes-foundations-keys-collection-app-balances-play-learning/" target="_blank">here.</a></p>
-                            </div>
-
-              <div class="view view-first">
-								<div class="tringle"></div>
-								<img src="img/work/2/1.jpg" alt="">
-								<div class="mask">
-									<a class="info" data-rel="prettyPhoto" title="ZapJak" href="http://vimeo.com/18357907"></a>
-									<!--<a class="link" href="#"></a>-->
-								</div>
-							</div>
-							<div class="des">
-                  <h4>ZapJak</h4>
-                  <p>ZapJak is a fast-paced action-racing game developed in UDK. Take control of the Internet Super Highway!</p>
-              </div>
-
-              <!--<div class="view">
-								<div class="tringle"></div>
-								<img src="img/work/2/2.jpg" alt="">
-								<div class="mask">
-									<a class="info" data-rel="prettyPhoto" title="Epic Defense" href="http://www.youtube.com/watch?v=aPV5cgQcZIA"></a>
-									<a class="link" href="#"></a>
-								</div>
-							</div>
-							<div class="des">
-                                <h4>Epic Defense</h4>
-                                <p>Epic Defense is a tower defense game with a twist. Hack 'n slash in 3rd-person while placing towers to defend the castle.</p>
-                            </div>-->
-						</div>
-						<div class="block apps">
-							<div class="view view-first">
-								<div class="tringle"></div>
-								<img src="img/work/1/1.jpg" alt="">
-								<div class="mask">
-									<a class="info" data-rel="prettyPhoto" title="Spirit of the Virginia: Prologue" href="http://vimeo.com/43622801"></a>
-									<!--<a class="link" href="#"></a>-->
-								</div>
-							</div>
-							<div class="des">
-                                <h4>Spirit of the Virginia: Prologue</h4>
-                                <p>An interactive storybook featuring rich, animated 3D visuals and an in-depth "Codex" system.<!--<a href="https://itunes.apple.com/us/app/spirit-virginia-prologue/id572422034?mt=8&ign-mpt=uo%3D2" target="_blank">Released for the Apple iPad</a>.--></p>
-                            </div>
-
-
-							<!--<div class="view">
-								<div class="tringle"></div>
-								<img src="img/work/1/2.jpg" alt="">
-								<div class="mask">
-									<a class="info" data-rel="prettyPhoto" title="Operation Dino" href="http://vimeo.com/39008362"></a>
-									<a class="link" href="#"></a>
-								</div>
-							</div>
-							<div class="des">
-                                <h4>Operation Dino</h4>
-                                <p>An interactive educational experience for Dinosaur Hall developed in collaboration with the Academy of Natural Sciences.</p>
-                            </div>
-						</div>-->
-
-							<div class="view view-first">
-								<div class="tringle"></div>
-								<img src="img/work/1/3.jpg" alt="">
-								<div class="mask">
-									<a class="info" data-rel="prettyPhoto[tAPP_gal]" title="tAPP 01" href="http://youtu.be/hwpve4no5Sg"></a>
-									<a data-rel="prettyPhoto[tAPP_gal]" title="tAPP 02" href="http://youtu.be/8-TreefmSc0"></a>
-									<!--<a class="link" href="#"></a>-->
-								</div>
-							</div>
-							<div class="des">
-                                <h4>tAPP</h4>
-                                <p>A dynamic multimedia presentation tool for ETC marketing and sales, and use at tradeshow events.</p>
-                            </div>
-
-							<!--<div class="view">
-								<div class="tringle"></div>
-								<img src="img/work/1/4.jpg" alt="">
-								<div class="mask">
-									<a class="info" data-rel="prettyPhoto[infoCloud_gal]" title="InfoCloud 01" href="img/big/InfoCloud_01.jpg"></a>
-									<a data-rel="prettyPhoto[infoCloud_gal]" title="InfoCloud 02" href="img/big/InfoCloud_02.jpg"></a>
-									<a class="link" href="#"></a>
-								</div>
-							</div>
-							<div class="des">
-                                <h4>InfoCloud</h4>
-                                <p>An application that displays multimedia content across multiple monitors, intended as a lobby display solution.</p>
-                            </div>-->
-						</div>
-
-						<div class="block web">
-							<div class="view view-first">
-								<div class="tringle"></div>
-								<img src="img/work/3/1.jpg" alt="">
-								<div class="mask">
-									<a class="info" data-rel="prettyPhoto[drexelGames_gal]" title="DrexelGames 01" href="img/big/DrexelGames_01.jpg"></a>
-									<a data-rel="prettyPhoto[drexelGames_gal]" title="DrexelGames 02" href="img/big/DrexelGames_02.jpg"></a>
-									<a data-rel="prettyPhoto[drexelGames_gal]" title="DrexelGames 03" href="img/big/DrexelGames_03.jpg"></a>
-									<!--<a class="link" href="#"></a>-->
-								</div>
-							</div>
-							<div class="des">
-                                <h4>DrexelGames</h4>
-                                <p>DrexelGames is a showcase site for the Drexel University Game Development major.</p>
-                            </div>
-
-							<div class="view view-first">
-								<div class="tringle"></div>
-								<img src="img/work/3/2.jpg" alt="">
-								<div class="mask">
-									<a class="info" data-rel="prettyPhoto" title="SEI Knowledge Network" href="http://vimeo.com/55017527"></a>
-									<!--<a class="link" href="#"></a>-->
-								</div>
-							</div>
-							<div class="des">
-                                <h4>SEI Knowledge Network</h4>
-                                <p>This site was a group project working on designing an internal social networking and knowledge base solution for SEI.</p>
-                            </div>
-
-							<!--<div class="view">
-								<div class="tringle"></div>
-								<img src="img/work/3/3.jpg" alt="">
-								<div class="mask">
-									<a class="info" data-rel="prettyPhoto[mazesMonsters_gal]" title="Mazes & Monsters 01" href="img/big/Mazes&Monsters_01.jpg"></a>
-									<a data-rel="prettyPhoto[mazesMonsters_gal]" title="Mazes & Monsters 02" href="img/big/Mazes&Monsters_02.jpg"></a>
-									<a data-rel="prettyPhoto[mazesMonsters_gal]" title="Mazes & Monsters 03" href="img/big/Mazes&Monsters_03.jpg"></a>
-									<a class="link" href="#"></a>
-								</div>
-							</div>
-							<div class="des">
-                                <h4>Mazes & Monsters</h4>
-                                <p>This is a sample menu screen created for a project on interface design. It was created in Flash using responsive web techniques.</p>
-                            </div>-->
-						</div>
-						<!--<div class="block computergraphics">
-							<div class="view view-first">
-								<div class="tringle"></div>
-								<img src="img/work/4/1.jpg" alt="">
-								<div class="mask">
-									<!--<a class="info" data-rel="prettyPhoto" href="img/big/1.jpg"></a>->
-									<a class="info" data-rel="prettyPhoto" title="Starflies" href="http://vimeo.com/11911279"></a>
-									<!--<a class="link" href="#"></a>->
-								</div>
-							</div>
-							<div class="des">
-                                <h4>Starflies</h4>
-                                <p>Starflies is a contemplative animation about a dying nature god, inspired by Hayao Miyazaki's classic films.</p>
-                            </div>
-
-							<!--<div class="view">
-								<div class="tringle"></div>
-								<img src="img/work/4/2.jpg" alt="">
-								<div class="mask">
-									<a class="info" data-rel="prettyPhoto" title="Giants' Chess" href="http://www.youtube.com/watch?v=JiZY5c8Q4ZU"></a>
-									<a class="link" href="#"></a>
-								</div>
-							</div>
-							<div class="des">
-                                <h4>Giants' Chess</h4>
-                                <p>A short video using the ice effect I developed in Maya using fractal generation and several compositing techniques.</p>
-                            </div>->
-							<div class="view view-first">
-								<div class="tringle"></div>
-								<img src="img/work/4/3.jpg" alt="">
-								<div class="mask">
-									<a class="info" data-rel="prettyPhoto" title="Remember to Recharge" href="http://vimeo.com/12703472"></a>
-									<!--<a class="link" href="#"></a>->
-								</div>
-							</div>
-							<div class="des">
-                                <h4>Remember to Recharge</h4>
-                                <p>In this piece, a forgetful professorbot lets something important slip his mind. Music by Steve Davit.</p>
-                            </div>
-						</div>-->
-					</div>
-					<!-- /portfolio items end-->
-				</div>
-				<!-- /Portfolio end -->
-			</section>
-			<!-- /Works end -->
-
-			<!-- personal Info -->
-			<section id="resume" class="section mtcon">
-				<!-- heading -->
-				<div class="row">
-					<h2 class="mtcon-title">Resume</h2>
-					<!--<div class="span8 short-dec">
-					</div>-->
-				</div>
-				<!-- /heading -->
-
-				<!--<div class="row">
-					<div class="span9">
-						<!-- Experience Timeline ->
-						<div class="timeline">
-							<!-- Item Head ->
-								<div class="timeline-item">
-									<div class="timeline-head">
-										<span class="icon-lightbulb"><i></i></span>
-									</div>
-									<div class="timeline-arrow"><i></i></div>
-									<div class="timeline-head-content">
-											<h3><b>Work Experience</b></h3>
-									</div>
-								</div>
-							<!-- /Item Head end ->
-
-							<!-- first item of timeline ->
-							<div class="timeline-item">
-								<div class="timeline-item-date">2014 - now</div><!-- date ->
-									<!-- timeline item trigger ->
-									<div class="timeline-item-trigger">
-										<span class="icon-minus-sign" data-toggle="collapse" data-target="#job1"><i></i></span>
-									</div>
-									<!-- /end of timeline item trigger ->
-									<div class="timeline-arrow"><i></i></div>
-									<!-- timeline main content ->
-									<div class="timeline-item-content">
-										<h4 data-toggle="collapse" data-target="#job1">Freelance Mobile Developer @ EP Visual</h4>
-										<div class="collapse in" id="job1">
-											<p><small class="muted">from 2014 to Present</small></p>
-											<h5 class="media-heading primary-color">Mobile Developer</h5>
-											<p>I am responsible for programming additional functionality and APIs for an Xcode application, as well as Unity programming, animation and integration with Xcode.</p>
-										</div>
-								    </div>
-								 	<!-- /end of timeline main content ->
-							</div>
-							<!-- /end of first item of timeline ->
-
-							<!-- Timeline item ->
-							<div class="timeline-item">
-								<div class="timeline-item-date">2013 - 2014</div><!-- date ->
-									<!-- timeline item trigger ->
-									<div class="timeline-item-trigger">
-										<span class="icon-minus-sign" data-toggle="collapse" data-target="#job2"><i></i></span>
-									</div>
-									<!-- /end of timeline item trigger ->
-									<div class="timeline-arrow"><i></i></div>
-									<!-- timeline main content ->
-									<div class="timeline-item-content">
-										<h4 data-toggle="collapse" data-target="#job2">Mobile Developer @ Drexel University's GLIDE Lab</h4>
-										<div class="collapse in" id="job2">
-											<p><small class="muted">from 2013 to 2014</small></p>
-											<h5 class="media-heading primary-color">Mobile Developer</h5>
-											<p>I was Lead Developer on the education iOS game "Keys to the Collection" in partnership with the Barnes Foundation. </p>
-										</div>
-								    </div>
-								 	<!-- /end of timeline main content ->
-							</div>
-							<!-- /end of timeline item ->
-
-							<!-- Timeline item ->
-							<div class="timeline-item">
-								<div class="timeline-item-date">2012 - 2013</div><!-- date ->
-									<!-- timeline item trigger ->
-									<div class="timeline-item-trigger">
-										<span class="icon-minus-sign" data-toggle="collapse" data-target="#job3"><i></i></span>
-									</div>
-									<!-- /end of timeline item trigger ->
-									<div class="timeline-arrow"><i></i></div>
-									<!-- timeline main content ->
-									<div class="timeline-item-content">
-										<h4 data-toggle="collapse" data-target="#job3">Lead Developer @ Beyond Ink</h4>
-										<div class="collapse in" id="job3">
-											<p><small class="muted">from 2012 to 2013</small></p>
-											<h5 class="media-heading primary-color">Mobile Developer</h5>
-											<p>I was lead developer on "Spirit of the Virginia," an interactive animated storybook for iPad featuring rich, detailed CG.</p>
-											<p><a href="www.wearebeyondink.com" target="_blank" title="" class="noprint">&rarr; View website</a></p>
-										</div>
-								    </div>
-								 	<!-- /end of timeline main content ->
-							</div>
-							<div class="timeline-item">
-								<div class="timeline-item-date">2012 - now</div><!-- date ->
-									<div class="timeline-item-trigger">
-										<span class="icon-minus-sign" data-toggle="collapse" data-target="#job4"><i></i></span>
-									</div>
-									<div class="timeline-arrow"><i></i></div>
-									<!-- Timeline main content ->
-									<div class="timeline-item-content">
-										<h4 data-toggle="collapse" data-target="#job4">Adjunct Professor @ Drexel University</h4>
-										<div class="collapse in" id="job4">
-											<p><small class="muted">from 2012 to Present</small></p>
-											<h5 class="media-heading primary-color">Digital Media Professor</h5>
-											<p>I predominantly teach introductory game development courses at Drexel University.</p>
-										</div>
-									</div>
-									<!-- /end of timeline content ->
-							</div>
-							<!-- /end of timeline item ->
-
-							<!-- Timeline item ->
-							<div class="timeline-item">
-								<div class="timeline-item-date">2011 - 2011</div><!-- date ->
-									<div class="timeline-item-trigger">
-										<span class="icon-minus-sign" data-toggle="collapse" data-target="#job5"><i></i></span>
-									</div>
-									<div class="timeline-arrow"><i></i></div>
-									<!-- Timeline main content ->
-									<div class="timeline-item-content">
-										<h4 data-toggle="collapse" data-target="#job5">Multitouch Developer @ ETC</h4>
-										<div class="collapse in" id="job5">
-											<p><small class="muted">from 2011 to 2011</small></p>
-											<h5 class="media-heading primary-color">Software Developer</h5>
-											<p>I created a multitouch, multimedia presentation tool for ETC sales / trade show use. I also designed software to power ETC Orlando's multi-monitor media lobby display.</p>
-											<p><a href="http://www.etcusa.com/careers/co-op-program/" target="_blank" title="" class="noprint">&rarr; View website</a></p>
-										</div>
-									</div>
-									<!-- /end of timeline content ->
-							</div>
-							<!-- /end of timeline item ->
-						</div>
-						<!-- /Experience Timeline end ->
-
-
-						<!-- Education Timeline ->
-						<div class="timeline">
-							<!-- Item Head ->
-								<div class="timeline-item">
-									<div class="timeline-head">
-										<span class="icon-certificate"><i></i></span>
-									</div>
-									<div class="timeline-arrow"><i></i></div>
-									<div class="timeline-head-content">
-											<h3><b>Education</b></h3>
-									</div>
-								</div>
-							<!-- /Item Head end ->
-							<!-- first item of timeline ->
-							<div class="timeline-item">
-								<div class="timeline-item-date">2012 - 2013</div><!-- date ->
-									<!-- timeline item trigger ->
-									<div class="timeline-item-trigger">
-										<span class="icon-minus-sign" data-toggle="collapse" data-target="#edu1"><i></i></span>
-									</div>
-									<!-- /end of timeline item trigger ->
-									<div class="timeline-arrow"><i></i></div>
-									<!-- timeline main content ->
-									<div class="timeline-item-content">
-										<h4 data-toggle="collapse" data-target="#edu1">Master's in Digital Media @ Drexel University</h4>
-										<div class="collapse in" id="edu1">
-											<p><small class="muted">from 2012 to 2013</small></p>
-											<h5 class="media-heading primary-color">Accelerated BS/MS Program</h5>
-											<p>I completed my Master's degree at Drexel University in June 2013, with my thesis on "Exploring Asymmetrical Gameplay across Heterogeneous Devices."</p>
-											<p><a href="http://www.drexel.edu/westphal/graduate/accelerated/" target="_blank" title="" class="noprint">&rarr; View website</a></p>
-										</div>
-								    </div>
-								 	<!-- /end of timeline main content ->
-							</div>
-							<!-- /end of first item of timeline -->
-
-							<!-- Timeline item ->
-							<div class="timeline-item">
-								<div class="timeline-item-date">2008 - 2012</div><!-- date ->
-									<div class="timeline-item-trigger">
-										<span class="icon-minus-sign" data-toggle="collapse" data-target="#edu2"><i></i></span>
-									</div>
-									<div class="timeline-arrow"><i></i></div>
-									<!-- Timeline main content ->
-									<div class="timeline-item-content">
-										<h4 data-toggle="collapse" data-target="#edu2">Bachelor of Science, Digital Media @ Drexel University</h4>
-										<div class="collapse in" id="edu2">
-											<p><small class="muted">from 2008 to 2012</small></p>
-											<h5 class="media-heading primary-color">Undergraduate Program</h5>
-											<p>Digital Media at Drexel is an undergraduate program that combines animation, game development, and web design.</p>
-										</div>
-									</div>
-									<!-- /end of timeline content ->
-							</div>
-							<!-- /end of timeline item ->
-						</div>
-						<!-- /Education Timeline end -->
-						<!-- download my cv -->
-						<div class="download">
-							<h3>Download my resume.</h3>
-							<a class="btn btn-success" href="resume.pdf" target="_blank">Download</a>
-						</div>
-						<!-- download my cv end -->
-					<!--</div><!--span9->
-				</div>-->
-			</section>
-			<!-- /Personal Info end -->
-
-			<!-- Blog --
-			<section id="blog" class="section mtcon">
-				<!-- heading --
-				<div class="row">
-					<h2 class="mtcon-title">Blog</h2>
-				</div>
-				<!-- /heading --
-				<div class="row">
-					<div class="blog">
-						<!-- normal post --
-
-						<div class="block">
-							<iframe src="https://rspeck.wordpress.com/" width="100%" height="500" frameborder="0"></iframe>
-
-						</div>
-					</div>
-				</div>
-
-
-
-			</section>
-			<!-- /Blog end -->
-
-			<!-- Contact -->
-			<section id="contact" class="section mtcon">
-				<!-- heading -->
-				<div class="row">
-					<h2 class="mtcon-title">Contact</h2>
-					<div class="span8 short-dec">
-					</div>
-				</div>
-				<!-- /heading -->
-
-				<div class="row contact">
-          <!--<div style="line-height:0; border:2px solid #D3D3D3; left: 0px; max-width:500; height:870; overflow: hidden; margin-top:0; margin-left:0;">-->
-          <div style="line-height:0; border:2px solid #D3D3D3;">
-              <iframe scrolling="yes" width="100%" height="945" src="https://docs.google.com/forms/d/1Jo2gDGADb4pOO3gj0OVu6GYpFQVGIU0Y0QqOXeFSZR4/viewform?embedded=true">Loading...</iframe>
-          </div>
-					<!--<div class="span4">
-						<ul class="info">
-							<li><i class="icon-home"></i><span>350 E Del Mar Blvd</span></li>
-							<li><i class="icon-phone"></i><span>(732) 216-1547</span></li>
-							<li><i class="icon-envelope"></i><span>bobby.s.speck@gmail.com</span></li>
-						</ul>
-					</div>
-					<div class="span4">
-						<div id="note"></div>
-						<form class="form" id="ajax-contact-form" action="javascript:alert('Message was sent!');">
-							<input type="text" name="name" class="span4" placeholder="Name" required/>
-							<input type="text" class="span4" name="email" placeholder="Email" required/>
-							<textarea name="message" placeholder="Message" rows="8" class="span4"></textarea>
-							<button type="submit"  class="btn btn-success">SUBMIT</button>
-						</form>
-					</div>-->
-				</div><!-- .contact end -->
-			</section>
-			<!-- /Contact end -->
-			<footer><p>&copy;2016 Bobby Speck</p></footer>
-		</div>
-		<!-- Content Section -->
-	</div>
-</div>
-<!-- Main Container end -->
-<a class="scroll-top" href="#" title="Scroll to top">Top</a>
-</body>
+	</body>
 </html>
